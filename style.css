@@ -1,0 +1,359 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/* Шапка */
+.header {
+	width: 100%;
+}
+
+.header-container {
+	width: 85%;
+	margin: 1% auto 2% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+/* Лого сайта */
+.header__logo {
+	margin-right: 47px;
+}
+
+/* Навигация */
+.navigation {
+	width: 56%;
+	margin-right: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation__item a{
+	/* H5 Head */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	/* or 121% */
+	/* Земля */
+	color: #675A54;
+}
+
+/* Связь */
+.header__callgroup-container {
+	width: 26%;
+}
+
+.header__callgroup {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.callback__button-container {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+
+}
+
+.header__callgroup a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.header__callgroup .number {
+	color: #0068B1;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	margin-right: 39px;
+}
+
+/* Продажа земельных участков + фото */
+.land__selling-container {
+	box-sizing: border-box;
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.village__photo {
+	height: 530px;
+	width: 100%;
+	background-image: url('img/village-photo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 90%;
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 1;
+	align-items: flex-end;
+}
+
+.dark__bg {
+	background: rgba(0, 0, 0, 0.4);
+	width: 83%;
+	box-sizing: border-box;
+	border-top: 10px solid #2983D4;
+	border-right: 10px solid #2983D4;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	flex-basis: content;
+}
+
+.village__photo .article {
+	text-align: left;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 1.8%;
+	margin-left: 2.35%;
+	margin-top: 1.2%;
+}
+
+.village__photo .article h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 68px;
+	/* or 121% */
+	color: #fff;
+	margin: 0;
+	margin-bottom: -1%;
+}
+
+.village__photo .article span {
+	/* Body 1 */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 34px;
+	/* or 121% */
+	color: #fff;
+}
+
+.land__selling {
+	 display: flex;
+	 box-sizing: border-box;
+	 width: 66%;
+	 margin: 0;
+	 padding: 0;
+	 justify-content: space-between;
+	 flex-grow: 0;
+	 flex-shrink: 0;
+	 flex-wrap: wrap;
+	 border-bottom: 10px solid #6BBD45;
+/*	 padding-right: 2%;*/
+}
+
+.land__selling .text {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.land__selling .goods {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+/*	padding-top: 20px;*/
+	/*padding-bottom: 90px;*/
+
+}
+
+.goods::after {
+	content: "";
+	background-image: linear-gradient(180deg, #2983D4, #6BBD45);
+	width: 10px;
+	height: 200px;
+}
+
+.land__selling .goods__item .item1 {
+	margin-left: -10px;
+}
+
+ .land__selling .goods__item {
+ 	box-sizing: border-box;
+ 	display: flex;
+ }
+
+ .land__selling .goods__item h4 {
+ 	/* H4 Head */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	/* or 122% */
+	/* Земля */
+	color: #675A54;
+ }
+
+ .land__selling .goods__item span {
+ 	/* Body 3 */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	/* or 136% */
+	/* Земля */
+	color: #675A54;
+ }
+
+/* Логотипы преимуществ */
+
+.item__logo {
+	box-sizing: border-box;
+	margin-top: 27px;
+}
+
+/* Градиент и заплатка нижней рамки */
+.border__patch {
+	background-color: #fff;
+	height: 50px;
+	width: 500px;
+	position: relative;
+	right: 500px;
+	bottom: 30px;
+	/*border: 2px dashed green;*/
+}
+
+/* Бирка конфиденциальности */
+.confidentity {
+	background-image: url('img/confidentity.png');
+	width: 75px;
+	height: 65px;
+	background-position: 80% 80%;
+	position: absolute;
+	right: 0;
+}
+
+@media screen and (min-width: 1920px) {
+	.navigation {
+		margin-right: 100px;
+	}
+
+	.header__logo {
+		margin-right: 47px;
+	}
+}
+
+@media screen and (min-width: 1670px) and (max-width: 1919px) {
+	.navigation {
+		margin-right: 10px;
+		font-size: 14px;
+	}
+
+	.header__logo {
+		margin-right: 0px;
+	}
+
+	.header__callgroup-container .header__callgroup .number {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.header__callgroup {
+
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1669px) {
+	.navigation {
+		margin-right: 28px;
+		font-size: 12px;
+		width: 65%;
+	}
+
+	.header__logo {
+		margin-right: 5px;
+	}
+
+	.header .header-container {
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.header__callgroup-container .header__callgroup .number {
+		font-size: 12px;
+		margin-right: 16px;
+	}
+
+	.header__callgroup-container {
+		width: 30%;
+	}
+
+	.navigation__item {
+		margin-right: 3px;
+	}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+	.navigation {
+		margin-right: 15px;
+		font-size: 12px;
+		width: 80%;
+	}
+
+	.header__logo {
+		margin-right: 10px;
+	}
+
+	.header .header-container {
+		width: 93%;
+		margin: 20px auto;
+	}
+
+	.header__callgroup-container .header__callgroup .number {
+		font-size: 12px;
+		margin-right: 7px;
+	}
+
+	.header__callgroup-container {
+		width: 30%;
+	}
+
+	.navigation__item {
+		margin-right: 3px;
+	}
+
+	.callback__button-container {
+		width: 170px;
+	}
+}
