@@ -1,0 +1,497 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/* Шапка */
+.header {
+	width: 100%;
+}
+
+.header-container {
+	width: 85%;
+	margin: 1% auto 2% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+/* Лого сайта */
+.header__logo {
+	margin-left: 1%;
+}
+
+/* Навигация */
+.navigation {
+	margin-right:;
+	width: 56%;
+	margin-right: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation__item a{
+	/* H5 Head */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	/* or 121% */
+	/* Земля */
+	color: #675A54;
+}
+
+/* Связь */
+.header__callgroup-container {
+	width: 25%;
+}
+
+.header__callgroup {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.callback__button-container {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+
+}
+
+.header__callgroup a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.header__callgroup .number {
+	color: #0068B1;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	margin-right: 8%;
+}
+
+/* Продажа земельных участков + фото */
+.land__selling-container {
+	box-sizing: border-box;
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.village__photo {
+	height: 530px;
+	width: 100%;
+	background-image: url('img/village-photo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 90%;
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 1;
+	align-items: flex-end;
+}
+
+.dark__bg {
+	background: rgba(0, 0, 0, 0.4);
+	width: 83%;
+	box-sizing: border-box;
+	border-top: 10px solid #2983D4;
+	border-right: 10px solid #2983D4;
+	display: flex;
+	justify-content: center;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	flex-basis: content;
+}
+
+.village__photo .article {
+	text-align: left;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 1.8%;
+	margin-left: 2.35%;
+	margin-top: 1.2%;
+}
+
+.village__photo .article h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	line-height: 68px;
+	/* or 121% */
+	color: #fff;
+	margin: 0;
+	margin-bottom: -1%;
+}
+
+.village__photo .article span {
+	/* Body 1 */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 34px;
+	/* or 121% */
+	color: #fff;
+}
+
+.land__selling {
+	display: flex;
+	box-sizing: border-box;
+	width: 66%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	border-bottom: 10px solid #6BBD45;
+	/*	 padding-right: 2%;*/
+}
+
+.land__selling .text {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.land__selling .goods {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	/*	padding-top: 20px;*/
+	/*padding-bottom: 90px;*/
+
+}
+
+.goods::after {
+	content: "";
+	background-image: linear-gradient(180deg, #2983D4, #6BBD45);
+	width: 10px;
+	height: 200px;
+}
+
+.land__selling .goods__item .item1 {
+	margin-left: -10px;
+}
+
+.land__selling .goods__item {
+	box-sizing: border-box;
+	display: flex;
+}
+
+.land__selling .goods__item h4 {
+	/* H4 Head */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	/* or 122% */
+	/* Земля */
+	color: #675A54;
+}
+
+.land__selling .goods__item span {
+	/* Body 3 */
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	/* or 136% */
+	/* Земля */
+	color: #675A54;
+}
+
+/* Логотипы преимуществ */
+
+.item__logo {
+	box-sizing: border-box;
+	margin-top: 27px;
+}
+
+/* Градиент и заплатка нижней рамки */
+.border__patch {
+	background-color: #fff;
+	height: 50px;
+	width: 500px;
+	position: relative;
+	right: 500px;
+	bottom: 30px;
+	/*border: 2px dashed green;*/
+}
+
+/* Бирка конфиденциальности */
+.confidentity {
+	background-image: url('img/confidentity.png');
+	width: 75px;
+	height: 65px;
+	background-position: 80% 80%;
+	position: absolute;
+	right: 0;
+}
+
+/* Карточки предложений */
+
+.offers__container {
+	width: ;
+	margin-top: 60px;
+	overflow: hidden;
+}
+
+.switch__bar {
+	width: 1175px;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+
+.switch__bar .display__switch {
+	width: 248px;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 30px;
+}
+
+.display__switch .list {
+	background-color: #6BBD45;
+	height: inherit-1px;
+	width: 134px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	border: none;
+}
+
+.display__switch .list:hover, .map:hover {
+	cursor: pointer;
+}
+
+.display__switch .list:focus, .map:focus {
+	outline: none;
+}
+
+.display__switch .map {
+	height: inherit-1px;
+	width: 114px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #675A54;
+	border: none;
+	background-color: #fff;
+	border-radius: 0 30px 30px 0;
+}
+
+.switch__bar .turn__card {
+	width: 105px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.offers {
+	position: relative;
+	left: 19%;
+	display: flex;
+	width: 83.4%;
+	margin-bottom: 100px;
+}
+
+.offer__card {
+	width: 388px;
+	height: 500px;
+	border-radius: 2px 2px 0px 0px;
+	border: 1px solid rgba(209, 209, 209, 0.5);
+	box-sizing: border-box;
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.offer__card:not(:last-of-type) {
+		margin-right: 14px;
+}
+
+.offer__card .photo {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+}
+
+.offers .card1 .photo {
+	background-image: url('img/offers-comps/offer1.png');
+}
+
+.offers .card2 .photo {
+	background-image: url('img/offers-comps/offer2.png');
+} 
+
+.offers .card3 .photo {
+	background-image: url('img/offers-comps/offer3.png');
+} 
+
+.offers .card4 .photo {
+	background-image: url('img/offers-comps/offer4.png');
+	background-repeat: no-repeat;
+} 
+
+.offer__card .photo .village__name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff;
+	padding: 9px 0 20px 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offer__card .content {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.offer__card .content .info {
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 20px;
+}
+
+.offer__card .content .location {
+	padding-top: 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #392424;
+}
+
+.offer__card .content .quantity {
+	list-style: none;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #675A54;
+}
+
+.quantity li {
+	margin-top: 10px;
+}
+
+.offer__card .content .lands {
+	height: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #675A54;
+	background: #F3EFED;
+	border-radius: 0px 0px 2px 2px;
+}
+
+.offer__card .content .lands::after {
+	content: "";
+	background-image: url('img/offers-comps/lands-logo.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.offers__container .card4 {
+	filter: opacity(0.4);
+}
+
+.quantity .selled::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-image: url('img/offers-comps/selled.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.quantity .booked::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-image: url('img/offers-comps/clocks.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.quantity .available::before {
+	content: "";
+	background-image: url('img/offers-comps/available.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 16px;
+	height: 16px;
+}
