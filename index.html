@@ -142,11 +142,11 @@
 						<span class="location">
 							с. Кулига, 25 км по Ирбитскому тракту, <br>уникальный природный ландшафт
 						</span>
-						<ul class="quantity">
-							<li class="selled">618 продано</li>
-							<li class="booked">8 забронировано</li>
-							<li class="available">233 доступно</li>
-						</ul>
+						<div class="quantity">
+							<span class="selled">618 продано</span>
+							<span class="booked">8 забронировано</span>
+							<span class="available">233 доступно</span>
+						</div>
 					</div>
 
 					<div class="lands">
@@ -166,11 +166,11 @@
 						<span class="location">
 							25 км по Московскому тракту, прилегает к<br>селу Успенка
 						</span>
-						<ul class="quantity">
-							<li class="selled">337 продано</li>
-							<li class="booked">7 забронировано</li>
-							<li class="available">145 доступно</li>
-						</ul>
+						<div class="quantity">
+							<span class="selled">337 продано</span>
+							<span class="booked">7 забронировано</span>
+							<span class="available">145 доступно</span>
+						</div>
 					</div>
 
 					<div class="lands">
@@ -190,11 +190,11 @@
 						<span class="location">
 							18 км по Московскому тракту, окружено густым<br>заповедным лесом
 						</span>
-						<ul class="quantity">
-							<li class="selled">331 продано</li>
-							<li class="booked">21 забронировано</li>
-							<li class="available">155 доступно</li>
-						</ul>
+						<div class="quantity">
+							<span class="selled">331 продано</span>
+							<span class="booked">21 забронировано</span>
+							<span class="available">155 доступно</span>
+						</div>
 					</div>
 
 					<div class="lands">
@@ -213,11 +213,11 @@
 							<span class="location">
 								20 км по Московскому тракту, на берегу<br>реки Ушаковка
 							</span>
-							<ul class="quantity">
-								<li class="selled">226 продано</li>
-								<li class="booked">0 забронировано</li>
-								<li class="available">0 доступно</li>
-							</ul>
+							<div class="quantity">
+								<span class="selled">226 продано</span>
+								<span class="booked">0 забронировано</span>
+								<span class="available">0 доступно</span>
+							</div>
 						</div>
 
 						<div class="lands">
@@ -228,6 +228,33 @@
 			</div>
 	</section>
 
+	<section class="land__choose-container">
+		<div class="border"></div>
+			<div class="background">
+				<div class="bg-parts">
+					<div class="left"></div>
+					<div class="center"></div>
+					<div class="right"></div>
+				</div>
+			</div>
+			<div class="land__choose">
+				<div class="land__choose-inner">
+				<span class="article">Выберите <br>свой участок</span>
+				<div class="choose__panel">
+					<div class="price">
+						<span class="price__range"><label for="price__range">Стоимость</label></span>
+						<br><input type="range" name="price__range" id="price__range" min="380 249" max="1 907 101">
+					</div>
+					<div class="size">
+						<span class="size__range"><label for="size__range">Размер участка</label></span>
+						<br><input type="range" name="size__range" id="size__range" min="5" max="15">
+					</div>
+					<button class="choose__button">Подобрать участок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
 </main>	
 </body>
 
