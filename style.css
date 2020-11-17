@@ -1934,7 +1934,7 @@ a {
 
 .footer__navigation .navigation {
 	display: flex;
-	width: 75%;
+	width: 85%;
 	height: 100%;
 	justify-content: space-between;
 	margin-right: 150px;
@@ -2035,7 +2035,7 @@ a {
 }
 
 .dev__info {
-	width: 100%;
+	width: 98%;
 	display: flex;
 	justify-content: space-between;
 	font-family: Montserrat;
