@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title>Тестовая верстка</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -203,59 +203,398 @@
 
 				</div>
 			</div>
-				<div class="offer__card card4">
-					<div class="photo">
-						<div class="village__name">Ушаково</div>
+			<div class="offer__card card4">
+				<div class="photo">
+					<div class="village__name">Ушаково</div>
+				</div>
+
+				<div class="content">
+					<div class="info">
+						<span class="location">
+							20 км по Московскому тракту, на берегу<br>реки Ушаковка
+						</span>
+						<div class="quantity">
+							<span class="selled">226 продано</span>
+							<span class="booked">0 забронировано</span>
+							<span class="available">0 доступно</span>
+						</div>
 					</div>
 
-					<div class="content">
-						<div class="info">
-							<span class="location">
-								20 км по Московскому тракту, на берегу<br>реки Ушаковка
-							</span>
-							<div class="quantity">
-								<span class="selled">226 продано</span>
-								<span class="booked">0 забронировано</span>
-								<span class="available">0 доступно</span>
-							</div>
-						</div>
-
-						<div class="lands">
-							<span>Продано</span>
-						</div>
-				</div>
+					<div class="lands">
+						<span>Продано</span>
+					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 
 	<section class="land__choose-container">
 		<div class="border"></div>
-			<div class="background">
-				<div class="bg-parts">
-					<div class="left"></div>
-					<div class="center"></div>
-					<div class="right"></div>
-				</div>
+		<div class="background">
+			<div class="bg-parts">
+				<div class="left"></div>
+				<div class="center"></div>
+				<div class="right"></div>
 			</div>
-			<div class="land__choose">
-				<div class="land__choose-inner">
-				<span class="article">Выберите <br>свой участок</span>
+		</div>
+		<div class="land__choose">
+			<div class="land__choose-inner">
+				<h2 class="article">Выберите <br>свой участок</h2>
 				<div class="choose__panel">
 					<div class="price">
-						<span class="price__range"><label for="price__range">Стоимость</label></span>
+						<span><label for="price__range">Стоимость</label></span>
 						<br><input type="range" name="price__range" id="price__range" min="380 249" max="1 907 101">
 					</div>
 					<div class="size">
-						<span class="size__range"><label for="size__range">Размер участка</label></span>
+						<span><label for="size__range">Размер участка</label></span>
 						<br><input type="range" name="size__range" id="size__range" min="5" max="15">
 					</div>
 					<button class="choose__button">Подобрать участок</button>
 				</div>
 			</div>
 		</div>
-	</div>
 	</section>
-</main>	
-</body>
 
-</html>
+	<section class="about-container">
+		<h2 class="article">О компании</h2>
+		<div class="about">
+			<div class="place__photo">
+				<div class="list__dots">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="years">
+				<h4>Более 8 лет на рынке</h4>
+				<p>Девелоперская компания «Навигатор» осуществляет <br>продажу земельных
+					участков с готовыми коммуникациями <br>в коттеджных поселках города Тюмени</p>
+				</div>
+				<div class="support">
+					<h4>Профессиональная юридическая поддержка</h4>
+					<p>Гарант юридической чистоты сделки</p>
+				</div>
+				<div class="service">
+					<h4>Собственная <a href="#">обслуживающая компания</a></h4>
+					<p>Круглый год следит <br>за чистотой и порядком в поселках</p>
+				</div>
+				<div class="location">
+					<h4>Удобное расположение</h4>
+					<p>Земельные участки расположенны на популярных трактах <br>города в экологически 
+					чистых районах.</p>
+				</div>
+				<div class="unique">
+					<h4>Уникальные места</h4>
+					<p>Каждый поселок имеет свою концепцию и отличие.<br>Вы сможете купить земельный 
+						участок на берегу реки, рядом <br>с лесом, на холмах или выбрать отличный видовой участок</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="simple__buy-container">
+				<h2 class="article">Купить участок просто</h2>
+				<div class="buy__switch">
+					<button class="steps">Этапы покупки</button>
+					<button class="installment">Рассрочка</button>
+					<button class="mortgage">Ипотека</button>
+				</div>
+				<div class="steps-container">
+					<div class="steps__item item1">
+						<div class="logo"></div>
+						<span>Оставьте заявку на обратный <br>звонок</span>
+					</div>
+					<div class="steps__item item2">
+						<div class="logo"></div>
+						<span>Мы позвоним и пригласим вас <br>на экскурсию или в офис</span>
+					</div>
+					<div class="steps__item item3">
+						<div class="logo"></div>
+						<span>Выберем с вами удобный <br>способ оплаты</span>
+					</div>
+					<div class="steps__item item4">
+						<div class="logo"></div>
+						<span>Участок ваш!</span>
+					</div>
+				</div>	
+			</section>
+
+			<section class="view__signup-container">
+				<div class="border"></div>
+				<div class="background"></div>
+				<div class="view__signup">
+					<div class="view__signup-inner">
+						<div class="text">
+							<h2 class="article">Запишитесь <br>на просмотр</h2>
+							<div class="description">
+								Эксперт по недвижимости быстро подберет вам <br>подходящий вариант земельного участка. А еще проведёт <br>вам экскурсию по счастливой загородной жизни. 
+							</div>
+						</div>
+						<div class="signup__panel">
+							<input size="40" class="name__form" type="text" name="name" id="name" placeholder="Имя">
+							<input size="40" class="phone__form" type="tel" name="name" id="name" placeholder="Телефон">
+							<button class="signup__button">Записаться</button>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="agree" id="agree">
+							<label for="agree">Подтверждаю согласие с <span>политикой обработки персональных данных</span></label>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="why__us-container">
+				<h2 class="article">Почему выбирают <br>земельные участки у нас?</h2>
+				<div class="why__us">
+					<div class="gas">Газ 4м<sup>3</sup></div>
+					<div class="lighting">Уличное освещение</div>
+					<div class="roads">Дороги</div>
+					<div class="infrastructure">Инфраструктура</div>
+					<div class="loyal__buyer">
+						<div class="article">
+							<div>
+								<span>Программа &laquo;Лояльный <br>покупатель&raquo;</span>
+								<p>Дарим скидку 10% при 100% оплате <br>земельного участка в любом из <br>наших коттеджных поселков</p>
+							</div>
+							<div class="logo"></div>
+						</div>
+						<div class="panel">
+							<button class="choose__button">Подобрать участок</button>
+							<div class="turn__slide">
+								<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow__left">
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow__right">
+							</div>
+						</div>
+					</div>
+					<div class="electricity">Электричество <br>10-15 кВт</div>
+					<div class="family"></div>
+				</div>
+			</section>
+
+			<section class="questions-container">
+				<div class="questions-inner">
+					<div class="questions">
+						<h2>Появились вопросы?</h2>
+						<p>Оставьте свой телефон и мы свяжемся с вами</p>
+					</div>
+					<div class="questions__panel">
+						<div class="forms">
+							<input size="25" class="name__form" type="text" name="name" id="name" placeholder="   Имя">
+							<input size="25" class="phone__form" type="tel" name="name" id="name" placeholder="   Телефон">
+							<button class="questions__button">Отправить</button>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="agree" id="agree">
+							<label for="agree">Подтверждаю согласие с <span>политикой обработки персональных данных</span></label>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news__container">
+				<div class="switch__bar">
+					<div class="display__switch">
+						<button class="to__news">Новости</button>
+						<button class="to__stories">Истории жителей</button>
+						<button class="to__useful">Полезные статьи</button>
+					</div>
+					<div class="turn__card">
+						<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow__left">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow__right">
+					</div>
+				</div>
+				<div class="news">
+					<div class="news__card card1">
+
+						<div class="photo">
+
+						</div>
+
+						<div class="content">
+							<div class="info">
+								<span class="article">
+									Итоги зимнего праздника <br>в «Альпийской долине»
+								</span>
+								<div class="description">
+									Вот и наступила Масленичная неделя <br>— праздник, справедливо <br>считающийся одним из самых <br>«кулинарных» праздников
+								</div>
+							</div>
+
+							<div class="read__full">
+								<span>Читать далее</span>
+								<time datetime="2019-03-04">4.03.2019</time>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="news__card card2">
+
+						<div class="photo">
+
+						</div>
+
+						<div class="content">
+							<div class="info">
+								<span class="article">
+									Индексация размера <br>оплаты
+								</span>
+								<div class="description">
+									С 01.04.2019 года производится <br>индексация размера платы на 3,64%
+								</div>
+							</div>
+
+							<div class="read__full">
+								<span>Читать далее</span>
+								<time datetime="2019-03-01">1.03.2019</time>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="news__card card3">
+
+						<div class="photo">
+
+						</div>
+
+						<div class="content">
+							<div class="info">
+								<span class="article">
+									Ограничение на проезд <br>тяжелой техники
+								</span>
+								<div class="description">
+									В КП "Альпийская долина", "Ёлки", <br>"Ушаково" и "Есенино" закрыт проезд <br>для грузовой техники
+								</div>
+							</div>
+
+							<div class="read__full">
+								<span>Читать далее</span>
+								<time datetime="2019-03-25">25.03.2019</time>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="news__card card4">
+
+						<div class="photo">
+
+						</div>
+
+						<div class="content">
+							<div class="info">
+								<span class="article">
+									В «Есенино» появилось <br>видеонаблюдение
+								</span>
+								<div class="description">
+									ВВ парке отдыха КП "Есенино" <br>запущено видеонаблюдение.
+								</div>
+							</div>
+
+							<div class="read__full">
+								<span>Читать далее</span>
+								<time datetime="2019-01-24">24.01.2019</time>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mailing-container">
+				<div class="mailing">
+				<div class="main__part">
+					<div class="logo">
+						
+					</div>
+					<div class="text">
+						Подписывайтесь <br>на новости и акции:
+					</div>
+					<div class="panel">
+						<div class="forms">
+							<input size="29" class="email__form" type="email" name="email" id="email" placeholder="   E-mail">
+							<button class="subscribe__button">Подписаться</button>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="agree" id="agree">
+							<label for="agree">Подтверждаю согласие с <span>политикой обработки персональных данных</span></label>
+						</div>
+					</div>
+				</div>
+					<div class="socials">
+						<div class="fb"></div>
+						<div class="vk"></div>
+						<div class="inst"></div>
+						<div class="youtube"></div>
+						<div class="ok"></div>
+					</div>
+				</div>
+			</section>
+		</main>	
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer__navigation">
+					<div class="navigation">
+						<div class="villages">
+							<a href="#"><h5>Коттеджные поселки</h5></a>
+							<a href="#">Альпийская долина</a>
+							<a href="#">Есенино</a>
+							<a href="#">Ёлки</a>
+							<a href="#">Выбрать участок</a>
+							<a href="#"><h5>Отзывы</h5></a>
+						</div>
+						<div class="about__company">
+							<a href="#"><h5>О компании</h5></a>
+							<a href="#">Новости</a>
+							<a href="#">Полезные статьи</a>
+							<a href="#">Истории жителей</a>
+							<a href="#">Тендеры</a>
+							<a href="#">Вакансии</a>
+						</div>
+						<div class="to__buyers">
+							<a href="#"><h5>Покупателям</h5></a>
+							<a href="#">Рассрочка</a>
+							<a href="#">Ипотека</a>
+							<a href="#">Цены</a>
+							<a href="#">Лояльный покупатель</a>
+							<a href="#"><h5>Обслуживающая компания</h5></a>
+						</div>
+					</div>
+					<div class="contacts">
+						<h5>Наши контакты</h5>
+						<div class="phone__number">
+							<h5>+ 7 (3452) 546-276</h5>
+							<p>Офис Пн - Пт: 9:00 - 18:00</p>
+							<p>Call-центр работает <br>ежедневно с 9:00-20:00</p>
+						</div>
+						<div class="adress">
+							г.Тюмень, <br>ул. Семакова, 2/1
+							<a href="#">схема проезда</a>
+						</div>
+					</div>
+				</div>
+				<div class="rights">2012 - 2019. ООО &laquo;Навигатор. Управление активами&raquo;</div>
+				<div class="dev__info">
+					<div>2019 Навигатор по загородной недвижимости</div>
+					<a href="#">Политика конфиденциальности</a>
+					<div class="developed">Разработано</div>
+				</div>
+				<div class="attention">
+					Обращаем Ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой. Девелоперская компания "Навигатор" имеет право изменять стоимость объектов.  
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	</html>

@@ -59,7 +59,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 }
-
+/* Кнопка */
 .callback__button-container {
 	width: 216px;
 	height: 50px;
@@ -79,7 +79,7 @@ a {
 	font-size: 15px;
 	line-height: 20px;
 }
-
+/* Номер телефона */
 .header__callgroup .number {
 	color: #0068B1;
 	font-family: Montserrat;
@@ -102,7 +102,7 @@ a {
 	flex-grow: 0;
 	flex-shrink: 1;
 }
-
+/* Фото поселка */
 .village__photo {
 	height: 530px;
 	width: 100%;
@@ -115,7 +115,7 @@ a {
 	flex-shrink: 1;
 	align-items: flex-end;
 }
-
+/* Затемнение фото */
 .dark__bg {
 	background: rgba(0, 0, 0, 0.4);
 	width: 83%;
@@ -128,7 +128,7 @@ a {
 	flex-wrap: wrap;
 	flex-basis: content;
 }
-
+/* Продажа земельных участков */
 .village__photo .article {
 	text-align: left;
 	box-sizing: border-box;
@@ -163,7 +163,7 @@ a {
 	/* or 121% */
 	color: #fff;
 }
-
+/* Контейнер с преимуществами */
 .land__selling {
 	display: flex;
 	box-sizing: border-box;
@@ -178,12 +178,7 @@ a {
 	/*	 padding-right: 2%;*/
 }
 
-.land__selling .text {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
+/* Преимущества */
 .land__selling .goods {
 	display: flex;
 	justify-content: space-between;
@@ -271,7 +266,7 @@ a {
 	margin-top: 60px;
 	overflow: hidden;
 }
-
+/* Панель переключения вида/слайдов */
 .switch__bar {
 	width: 62%;
 	height: 45px;
@@ -283,8 +278,8 @@ a {
 	margin-left: auto;
 	margin-bottom: 50px;
 }
-
-.switch__bar .display__switch {
+/* Переключение вида */
+.offers__container .switch__bar .display__switch {
 	width: 248px;
 	height: inherit;
 	display: flex;
@@ -292,9 +287,8 @@ a {
 	border: 1px solid #D1D1D1;
 	box-sizing: border-box;
 	border-radius: 30px;
-}
-
-.display__switch .list {
+} /* Списком */
+.offers__container .display__switch .list {
 	background-color: #6BBD45;
 	height: inherit-1px;
 	width: 134px;
@@ -318,7 +312,7 @@ a {
 .display__switch .list:focus, .map:focus {
 	outline: none;
 }
-
+/* На карте */
 .display__switch .map {
 	height: inherit-1px;
 	width: 114px;
@@ -335,13 +329,13 @@ a {
 	background-color: #fff;
 	border-radius: 0 30px 30px 0;
 }
-
+/* Пролистывание карточек */
 .switch__bar .turn__card {
 	width: 105px;
 	display: flex;
 	justify-content: space-between;
 }
-
+/* Карточки */
 .offers {
 	position: relative;
 	left: 19%;
@@ -517,24 +511,25 @@ a {
 .land__choose-container {
 	height: 542px;
 	width: 94%;
-	border: 2px dashed green;
 	box-sizing: border-box;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 98px;
 }
-
+/* Градиентная рамка */
 .land__choose-container .border {
-	width: 65%;
+	width: 62.552%;
 	height: 541px;
 	display: flex;
 	box-sizing: border-box;
 	border-top: 10px solid #2983D4;
 	border-bottom: 10px solid #7EC95C;
-	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
 	justify-content: space-between;
 	position: absolute;
-	left: 17%;
+	left: 18.7%;
 }
 
 .land__choose-container .border::before {
@@ -542,7 +537,8 @@ a {
 	display: inline-block;
 	height: 530px;
 	width: 10px;
-	background-image: linear-gradient(180deg, #2983D4, #7EC95C);
+	background-image: linear-gradient(180deg, #2983D4 5%, #7EC95C 20%);
+	z-index: 5;
 } 
 
 .land__choose-container .border::after {
@@ -552,12 +548,11 @@ a {
 	width: 10px;
 	background-image: linear-gradient(180deg, #2983D4, #7EC95C);
 } 
-
+/* Фон */
 .land__choose-container .background {
 	width: 100%;
 	height: 80.8%;
 	box-sizing: border-box;
-	border: 2px dashed lightgreen;
 	margin-top: 50px;
 	/*background-color: #F3EFED;*/
 }
@@ -610,29 +605,32 @@ a {
 	opacity: 0.8;
 	z-index: 3;
 }
-
+/* Контейнер с подбором участка */
 .land__choose {
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	/*justify-content: center;*/
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	bottom: 70%;
 	z-index: 5;
-	width: 1100px;
-	height: 430px;
+	/*width: 1255px;*/
+	width: 66.6%;
+	height: 300px;
+	box-sizing: border-box;
 }
 
+/* Подбор участка */
 .land__choose-inner {
-	width: 1000px;
-	height: 430px;
-	margin-left: 30px;
+	width: 1100px;
+	height: 300px;
+	padding-left: 60px;
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
+	padding-top: 50px;
 }
-
+/* Заголовок */
 .land__choose-inner .article {
 	font-family: Montserrat;
 	font-style: normal;
@@ -640,12 +638,13 @@ a {
 	font-size: 36px;
 	line-height: 44px;
 	color: #675A54;
-	margin-bottom: 55px;
+	margin-bottom: 60px;
 }
-
+/* Слайдеры + кнопка */
 .land__choose-inner .choose__panel {
 	display: flex;
 	justify-content: space-between;
+	width: ;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -654,13 +653,13 @@ a {
 	color: #675A54;
 
 }
-
+/* Слайдеры */
 .land__choose-inner .choose__panel input[type="range"]{
 	margin-top: 25px;
 	width: 369px;
 	height: 14px;
 }
-
+/* Кнопка */
 .land__choose-inner .choose__panel .choose__button {
 	width: 216px;
 	height: 50px;
@@ -685,4 +684,1394 @@ a {
 
 .land__choose-inner .choose__panel .choose__button:focus {
 	outline: none;
+}
+
+/* О компании */
+.about-container {
+	width: 62.552%;
+	/*border: 2px dashed green;*/
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+}
+
+.about-container .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 50px;
+}
+
+.about {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 183px 244px 183px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	box-sizing: border-box;
+	gap: 15px;
+}
+
+.about p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #392424;
+	text-align: left;
+}
+
+.about .list__dots {
+	display: flex;
+}
+
+.about h4 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	color: #392424;
+}
+
+.about > div {
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 100%;
+	padding: 15px 90px 0 30px;
+}
+
+.about > div:first-child {
+	padding: 0 0 30px 30px;
+}
+
+.place__photo {
+	grid-row: 1/3;
+	grid-column: 1/3;
+	display: flex;
+	align-items: flex-end;
+	background-image: url('img/about-comps/place-photo.png');
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+
+.years {
+	grid-row: 1;
+	grid-column: 3/5;
+}
+
+.support {
+	grid-row: 2;
+	grid-column: 3;
+	background-color: #2983D4;
+	color: #fff;
+}
+
+.service {
+	grid-row: 2;
+	grid-column: 4;
+	background-color: #F3EFED;
+}
+
+.service a {
+	color: #7EC95C;
+}
+
+.service p {
+	margin-right: -20px;
+}
+
+.location {
+	grid-row: 3;
+	grid-column: 1/3;
+}
+
+.unique {
+	grid-row: 3;
+	grid-column: 3/5;
+	background-color: #7EC95C;
+	color: #fff;
+}
+
+.unique p, .support p, .unique h4, .support h4 {
+	color: #fff;
+}
+
+.place__photo .list__dots {
+	display: flex;
+	justify-content: space-between;
+	width: 125px;
+}
+
+.place__photo .list__dots span {
+	width: 13px;
+	height: 13px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.place__photo .list__dots span:hover {
+	cursor: pointer;
+	background-color: #7EC95C;
+	transition: 0.3s;
+}
+
+/* Купить участок просто */
+.simple__buy-container {
+	width: 62.552%;
+	/*border: 2px dashed green;*/
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+}
+
+.simple__buy-container .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 40px;
+}
+
+.buy__switch {
+	display: flex;
+	width: 35.85%;
+	height: 40px;
+	border-radius: 30px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	border: 1px solid #D1D1D1;
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+
+.steps, .installment, .mortgage {
+	width: 120px;
+	border: none;
+	border-radius: 30px;
+	background-color: #fff;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.buy__switch .steps {
+	background-color: #6BBD45;
+	width: 173px;
+	color: #fff;
+}
+
+.steps:focus, .installment:focus, .mortgage:focus {
+	outline: none;
+	border: none;
+}
+
+.steps:hover, .installment:hover, .mortgage:hover {
+	cursor: pointer;
+}
+
+.steps-container {
+	width: 110%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.steps__item {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #392424;
+}
+
+.steps__item .logo {
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.item1 .logo {
+	width: 125px;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/logo1.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.item2 .logo {
+	width: 125px;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/logo2.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.item3 .logo {
+	width: 125px;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/logo3.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.item4 .logo {
+	width: 125px;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/logo4.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.item1 .logo::before {
+	content: "1";
+	display: flex;
+	width: 24px;
+	height: 24px;
+	background-color: #675A54;
+	border-radius: 30px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 10px;
+	left: 6px;
+}
+
+.item2 .logo::before {
+	content: "2";
+	display: flex;
+	width: 24px;
+	height: 24px;
+	background-color: #675A54;
+	border-radius: 30px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 10px;
+	left: 6px;
+}
+
+.item3 .logo::before {
+	content: "3";
+	display: flex;
+	width: 24px;
+	height: 24px;
+	background-color: #675A54;
+	border-radius: 30px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 10px;
+	left: 6px;
+}
+
+.item4 .logo::before {
+	content: "4";
+	display: flex;
+	width: 24px;
+	height: 24px;
+	background-color: #675A54;
+	border-radius: 30px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 10px;
+	left: 6px;
+}
+
+.item1 .logo::after {
+	content: "";
+	width: 180px;
+	height: 0;
+	border: 1px solid #D1D1D1; 
+	display: inline-block;
+	position: relative;
+	top: 38%;
+	left: 108%;
+}
+
+.item2 .logo::after {
+	content: "";
+	width: 180px;
+	height: 0;
+	border: 1px solid #D1D1D1; 
+	display: inline-block;
+	position: relative;
+	top: 38%;
+	left: 108%;
+}
+
+.item3 .logo::after {
+	content: "";
+	width: 180px;
+	height: 0;
+	border: 1px solid #D1D1D1; 
+	display: inline-block;
+	position: relative;
+	top: 38%;
+	left: 108%;
+}
+
+/* Запишитесь на просмотр */
+.view__signup-container {
+	height: 542px;
+	width: 94%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.view__signup-container .border {
+	width: 62.552%;
+	height: 541px;
+	display: flex;
+	box-sizing: border-box;
+	border-top: 10px solid #2983D4;
+	border-bottom: 10px solid #7EC95C;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	position: absolute;
+	left: 18.7%;
+}
+
+.view__signup-container .border::before {
+	content: "";
+	display: inline-block;
+	height: 530px;
+	width: 10px;
+	background-image: linear-gradient(180deg, #2983D4 5%, #7EC95C 20%);
+	z-index: 5;
+} 
+
+.view__signup-container .border::after {
+	content: "";
+	display: inline-block;
+	height: 530px;
+	width: 10px;
+	background-image: linear-gradient(180deg, #2983D4, #7EC95C);
+} 
+/* Фон */
+.view__signup-container .background {
+	width: 1785px;
+	height: 430px;
+	position: relative;
+	top: 10%;
+	display: flex;
+	margin: auto 0;
+	background-image: url('img/view_signup-comps/bg.png');
+	background-repeat: no-repeat;
+}
+
+.view__signup-container .background::after {
+	content: "";
+	width: 1785px;
+	height: 430px;
+	background-color: #F3EFED;
+	opacity: 0.8;
+	z-index: 3;
+}
+
+.view__signup {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	bottom: 70%;
+	z-index: 5;
+	width: 66.6%;
+	height: 300px;
+	box-sizing: border-box;
+}
+
+
+.view__signup-inner {
+	width: 1000px;
+	height: 300px;
+	padding-left: 110px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+}
+/* Заголовок */
+.view__signup-inner .text {
+	display: flex;
+}
+
+.view__signup-inner .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 60px;
+}
+
+.view__signup-inner .description {
+	height: 100px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #675A54;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+/* Формы + чекбокс */
+.view__signup-inner .signup__panel {
+	display: flex;
+	justify-content: space-between;
+	width: 986px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 17px;
+	color: #675A54;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+/*  */
+.name__form, .phone__form {
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 3px;
+	line-height: 3;
+}
+
+/* Кнопка */
+.view__signup-inner .signup__panel .signup__button {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.view__signup-inner .signup__button:hover {
+	cursor: pointer;
+}
+
+.view__signup-inner .signup__button:focus {
+	outline: none;
+}
+
+.view__signup-inner .checkbox label{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #827D7B;
+}
+
+.view__signup-inner .checkbox span {
+	font-weight: bold;
+}
+
+/* Почему выбирают земельные участки у нас? */
+.why__us-container {
+	width: 62.552%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+}
+
+.why__us-container .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 40px;
+}
+
+/* Сетка */
+.why__us {
+	display: grid;
+	grid-template-columns: 289px 289px 289px 289px;
+	grid-template-rows: 240px 214px 214px; 
+	gap: 15px;
+	width: 62.552%;
+}
+
+.why__us > div {
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #392424;
+	padding: 30px 0 0 28px;
+}
+
+.why__us .gas {
+	grid-row: 1;
+	grid-column: 1;
+	background-color: #F3EFED;
+}
+
+ .gas::after {
+	content: "";
+	display: block;
+	width: 59px;
+	height: 60px;
+	background-image: url('img/why_us-comps/gas.svg');
+	position: relative;
+	top: 50%;
+	left: 70%;
+}
+
+.why__us .lighting {
+	grid-row: 1;
+	grid-column: 2;
+	color: #fff;
+	background-image: url('img/why_us-comps/lighting.png');
+}
+
+.why__us .roads {
+	grid-row: 1;
+	grid-column: 3;
+	color: #fff;
+	background-image: url('img/why_us-comps/roads.png');
+}
+
+.infrastructure {
+	grid-row: 1;
+	grid-column: 4;
+	background-color: #F3EFED;
+}
+
+.infrastructure::after {
+	content: "";
+	display: inline-block;
+	width: 59px;
+	height: 50px;
+	background-image: url('img/why_us-comps/infrastructure.svg');
+	position: relative;
+	top: 53%;
+	left: 70%;
+}
+
+.why__us .loyal__buyer {
+	grid-row: 2/4;
+	grid-column: 1/3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.why__us .loyal__buyer .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	width: 535px;
+}
+
+.why__us .loyal__buyer .article p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.why__us .electricity {
+	grid-row: 2;
+	grid-column: 3/5;
+	background-image: url('img/why_us-comps/electricity.png');
+	color: #fff;
+}
+
+.family {
+	grid-row: 3;
+	grid-column: 3/5;
+	background-image: url('img/why_us-comps/family.png');
+}
+
+.why__us .loyal__buyer .panel {
+	width: 530px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.why__us .loyal__buyer .choose__button {
+	width: 254px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	margin-left: 10px;
+}
+
+.why__us .loyal__buyer .choose__button:hover {
+	cursor: pointer;
+}
+
+.why__us .loyal__buyer .choose__button:focus {
+	outline: none;
+}
+
+.why__us .panel .turn__slide {
+	width: 144px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: flex-end;
+}
+
+.why__us .loyal__buyer .article {
+	display: flex;
+	justify-content: space-around;
+}
+
+.loyal__buyer .article .logo {
+	width: 193px;
+	height: 177px;
+	background-image: url('img/why_us-comps/loyal_buyer.svg');
+}
+
+.loyal__buyer .panel .turn__slide .dot {
+	width: 6px;
+	height: 6px;
+	background-color: #D1D1D1;
+	border-radius: 3px;
+}
+
+.loyal__buyer .panel .turn__slide .dot:first-of-type {
+	background-color: #6BBD45;
+}
+
+.loyal__buyer .panel .turn__slide .dot:hover {
+	background-color: #6BBD45;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+/* Вопросы */
+.questions-container {
+	width: 94.79%;
+	height: 224px;
+	margin: 0 auto;
+	background-color: #F3EFED;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	margin-bottom: 100px;
+}
+
+.questions-inner {
+	width: 67%;
+	margin: auto;
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+}
+
+.questions {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.questions h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 0;
+}
+
+.questions p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #392424;
+}
+
+.questions__panel {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 60%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 17px;
+	color: #675A54;
+	margin-top: 30px;
+}
+
+.questions__panel .questions__button {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.questions__panel .questions__button:hover {
+	cursor: pointer;
+}
+
+.questions__panel .questions__button:focus {
+	outline: none;
+}
+
+.questions__panel .forms {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.questions__panel .forms input {
+	height: 45px;
+}
+
+.questions__panel .checkbox label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.questions__panel .checkbox label span {
+	font-weight: bold;
+}
+
+.questions-container::after {
+	content: "";
+	width: 100%;
+	height: 10px;
+	display: block;
+	background-image: linear-gradient(90deg, #2983D4 50%, #7EC95C 53%);
+}
+
+/* Карточки новостей */
+.news__container {
+	width: ;
+	margin-top: 60px;
+	overflow: hidden;
+}
+/* Панель переключения вида/слайдов */
+.switch__bar {
+	width: 62%;
+	height: 45px;
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+/* Переключение вида */
+.switch__bar .display__switch {
+	width: 492px;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 30px;
+} /* Списком */
+.display__switch .to__news {
+	background-color: #6BBD45;
+	height: inherit-1px;
+	width: 134px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	border: none;
+}
+
+.display__switch .to__news:hover, .to__news:hover {
+	cursor: pointer;
+}
+
+.display__switch .to__news:focus, .to__news:focus {
+	outline: none;
+}
+/* На карте */
+.display__switch .to__stories {
+	height: inherit-1px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #675A54;
+	border: none;
+	background-color: #fff;
+	border-radius: 0 30px 30px 0;
+}
+
+.display__switch .to__stories:hover, .to__stories:hover {
+	cursor: pointer;
+}
+
+.display__switch .to__stories:focus, .to__stories:focus {
+	outline: none;
+}
+
+.display__switch .to__useful {
+	height: inherit-1px;
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #675A54;
+	border: none;
+	background-color: #fff;
+	border-radius: 0 30px 30px 0;
+}
+
+.display__switch .to__useful:hover, .to__useful:hover {
+	cursor: pointer;
+}
+
+.display__switch .to__useful:focus, .to__useful:focus {
+	outline: none;
+}
+/* Пролистывание карточек */
+.switch__bar .turn__card {
+	width: 142px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.switch__bar .turn__card div {
+	width: 6px;
+	height: 6px;
+	background-color: #D1D1D1;
+	border-radius: 3px;
+}
+
+.switch__bar .turn__card div:first-of-type {
+	background-color: #7EC95C;
+}
+
+.switch__bar .turn__card div:hover {
+	background-color: #7EC95C;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+/* Карточки */
+.news {
+	position: relative;
+	left: 19%;
+	display: flex;
+	width: 83.4%;
+	margin-bottom: 100px;
+}
+
+.news__card {
+	width: 388px;
+	height: 500px;
+	border-radius: 2px 2px 0px 0px;
+	border: 1px solid rgba(209, 209, 209, 0.5);
+	box-sizing: border-box;
+	filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.news__card:not(:last-of-type) {
+		margin-right: 14px;
+}
+
+.news__card .photo {
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+}
+
+.news .card1 .photo {
+	background-image: url('img/news-comps/news1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.news .card2 .photo {
+	background-image: url('img/news-comps/news2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+} 
+
+.news .card3 .photo {
+	background-image: url('img/news-comps/news3.png');
+	background-repeat: no-repeat;
+	background-position: center;
+} 
+
+.news .card4 .photo {
+	background-image: url('img/news-comps/news4.png');
+	background-repeat: no-repeat;
+	background-position: center;
+} 
+
+.news__card .content {
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+}
+
+.news__card .content .info {
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 25px;
+	padding-bottom: 20px;
+}
+
+.news__card .content .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #675A54;
+}
+
+.news__card .content .description {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #392424;;
+}
+
+.news__card .content .read__full {
+	height: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6BBD45;
+}
+
+.news__card .content .read__full time {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #979290;
+	margin-right: 20px;
+}
+
+.news__container .card4 {
+	filter: opacity(0.4);
+}
+
+/* Подписка на рассылку */
+.mailing-container {
+	width: 100%;
+	height: 110px;
+	background-color: #392424;
+}
+
+.mailing {
+	width: 62.552%;
+	height: inherit;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mailing .main__part {
+	display: flex;
+}
+
+.mailing .logo {
+	background-image: url('img/mailing-comps/logo.svg');
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 45px;
+	margin: auto 0;
+}
+
+.mailing .text {
+	color: #fff;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+	padding-left: 20px;
+	margin-right: 50px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.mailing .panel {
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.mailing .forms {
+	display: flex;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.panel .subscribe__button {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.panel .subscribe__button:hover {
+	cursor: pointer;
+}
+
+.panel .subscribe__button:focus {
+	outline: none;
+}
+
+.mailing .forms .email__form {
+	height: 50px;
+	border: 1px solid rgba(80, 66, 66, 0.2);
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin-right: 30px;
+	font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: #666;
+}
+
+.mailing .checkbox label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.mailing .checkbox label span {
+	font-weight: bold;
+}
+
+.mailing .socials {
+	display: flex;
+	width: 150px;
+	height: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fb {
+	width: 20px;
+	height: 20px;
+	background-image: url('img/mailing-comps/fb.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.vk {
+	width: 25px;
+	height: 20px;
+	background-image: url('img/mailing-comps/vk.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.inst {
+	width: 20px;
+	height: 20px;
+	background-image: url('img/mailing-comps/inst.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.youtube {
+	width: 20px;
+	height: 22px;
+	background-image: url('img/mailing-comps/youtube.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.ok {
+	width: 20px;
+	height: 21px;
+	background-image: url('img/mailing-comps/ok.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+/* Подвал */
+.footer {
+	width: 100%;
+	height: 355px;
+	background-color: #675A54;
+}
+
+.footer-container {
+	width: 62.552%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__navigation {
+	width: 100%;
+	height: 75%;
+	margin: inherit;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__navigation .navigation {
+	display: flex;
+	width: 75%;
+	height: 100%;
+	justify-content: space-between;
+	margin-right: 150px;
+}
+
+.footer__navigation .navigation div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.footer__navigation .navigation a {
+	display: flex;
+	height: inherit;
+	flex-direction: column;
+	justify-content: space-around;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+}
+
+.footer__navigation .navigation h5 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	margin: 0;
+}
+
+.footer__navigation .navigation a:first-of-type {
+	margin-top: 22px;
+}
+
+.footer__navigation .contacts {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #D1D1D1;
+	margin-left: 50px;
+}
+
+.footer__navigation .contacts h5 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.footer__navigation .contacts .phone__number {
+	margin-left: 25px;
+}
+
+.footer__navigation .contacts .adress {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	margin-left: 25px; 
+	height: 40%;
+	margin-top: 10px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.footer__navigation .contacts .adress a {
+	color: #fff;
+	text-decoration-line: underline;
+	font-weight: bold;
+}
+
+.rights {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #AEAEAE;
+	margin: 25px 0 5px 4px;
+}
+
+.dev__info {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #AEAEAE;
+	margin-bottom: 15px;
+	margin-left: 2px;
+}
+
+.dev__info a {
+	color: #AEAEAE;
+	text-decoration-line: underline;
+}
+
+.dev__info .developed::after {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 18px;
+	background-image: url('img/footer-comps/iq_dev-logo.svg');
+	background-repeat: no-repeat;
+	background-position: center 100%;
+	position: relative;
+	top: 5px;
+	left: 7px;
+}
+
+.attention {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #AEAEAE;
+	margin-bottom: 10px;
 }
