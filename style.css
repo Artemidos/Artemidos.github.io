@@ -1,4 +1,4 @@
-body {
+body, html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -32,9 +32,11 @@ a {
 .navigation {
 	margin-right:;
 	width: 56%;
+	height: 80px;
 	margin-right: 3%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .navigation__item a{
@@ -51,13 +53,17 @@ a {
 
 /* Связь */
 .header__callgroup-container {
-	width: 25%;
+	width: 27%;
+	height: 80px;
+	display: flex;
+	align-items: center;
 }
 
 .header__callgroup {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 /* Кнопка */
 .callback__button-container {
@@ -168,24 +174,27 @@ a {
 	display: flex;
 	box-sizing: border-box;
 	width: 66%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	justify-content: space-between;
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-wrap: wrap;
-	border-bottom: 10px solid #6BBD45;
+	flex-direction: column;
+	overflow: hidden;
 	/*	 padding-right: 2%;*/
 }
 
+.land__selling::after {
+	content: "";
+	width: 700px;
+	height: 10px;
+	background-color: #6BBD45;
+	position: relative;
+	left: 41.5%;
+}
 /* Преимущества */
 .land__selling .goods {
+	width: 100%;
+	height: 210px;
 	display: flex;
 	justify-content: space-between;
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 100%;
-	flex-wrap: wrap;
 	/*	padding-top: 20px;*/
 	/*padding-bottom: 90px;*/
 
@@ -193,9 +202,9 @@ a {
 
 .goods::after {
 	content: "";
-	background-image: linear-gradient(180deg, #2983D4, #6BBD45);
+	background-image: linear-gradient(180deg, #2983D4 7%, #6BBD45 30%);
 	width: 10px;
-	height: 200px;
+	height: 100%;
 }
 
 .land__selling .goods__item .item1 {
@@ -205,6 +214,7 @@ a {
 .land__selling .goods__item {
 	box-sizing: border-box;
 	display: flex;
+	padding-top: 30px;
 }
 
 .land__selling .goods__item h4 {
@@ -236,17 +246,6 @@ a {
 .item__logo {
 	box-sizing: border-box;
 	margin-top: 27px;
-}
-
-/* Градиент и заплатка нижней рамки */
-.border__patch {
-	background-color: #fff;
-	height: 50px;
-	width: 500px;
-	position: relative;
-	right: 500px;
-	bottom: 30px;
-	/*border: 2px dashed green;*/
 }
 
 /* Бирка конфиденциальности */
@@ -369,18 +368,78 @@ a {
 	background-image: url('img/offers-comps/offer1.png');
 }
 
+.offers .card1 .photo::before {
+	display: inline-block;
+	content: "";
+	width: 58px;
+	height: 58px;
+	background-image: url('img/offers-comps/logo1.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 30px;
+	position: relative;
+	bottom: 49%;
+	left: 5%;
+}
+
 .offers .card2 .photo {
 	background-image: url('img/offers-comps/offer2.png');
 } 
+
+.offers .card2 .photo::before {
+	display: inline-block;
+	content: "";
+	width: 58px;
+	height: 58px;
+	background-image: url('img/offers-comps/logo2.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 30px;
+	position: relative;
+	bottom: 49%;
+	left: 5%;
+}
 
 .offers .card3 .photo {
 	background-image: url('img/offers-comps/offer3.png');
 } 
 
+.offers .card3 .photo::before {
+	display: inline-block;
+	content: "";
+	width: 58px;
+	height: 58px;
+	background-image: url('img/offers-comps/logo3.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 30px;
+	position: relative;
+	bottom: 49%;
+	left: 5%;
+}
+
 .offers .card4 .photo {
 	background-image: url('img/offers-comps/offer4.png');
 	background-repeat: no-repeat;
 } 
+
+.offers .card4 .photo::before {
+	display: inline-block;
+	content: "";
+	width: 58px;
+	height: 58px;
+	background-image: url('img/offers-comps/logo4.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 30px;
+	position: relative;
+	bottom: 49%;
+	left: 5%;
+}
 
 .offer__card .photo .village__name {
 	font-family: Montserrat;
@@ -451,15 +510,48 @@ a {
 	border-radius: 0px 0px 2px 2px;
 }
 
-.offer__card .content .lands::after {
-	content: "";
-	background-image: url('img/offers-comps/lands-logo.svg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
+.lands .logo {
 	width: 50px;
+	height: 49px;
+	background-image: url('img/offers-comps/border.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 5%;
+}
+
+.lands .logo::before {
+	content: "";
+	display: block;
+	width: 26px;
 	height: 50px;
-	margin-right: 20px;
+	background-image: url('img/offers-comps/timeline.svg');	
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 46%;
+}
+
+.lands .logo::after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url('img/offers-comps/arrow.svg');	
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: 75%;
+	left: 23%;
+}
+
+.lands .logo:hover::after {
+	filter: brightness(1.3) saturate(0.6);
+}
+
+.lands .logo:hover::before {
+	transform-origin: left center;
+	transform: rotate(180deg) translate(-3px, -1px);
+	filter: brightness(1.3) saturate(0.6);
 }
 
 .offers__container .card4 {
@@ -558,7 +650,7 @@ a {
 }
 
 .land__choose-container .bg-parts {
-	width: 1785px;
+	width: 100%;
 /*	position: absolute;*/
 	display: flex;
 	margin: auto 0;
@@ -598,7 +690,7 @@ a {
 
 .bg-parts::after {
 	content: "";
-	width: 1785px;
+	width: 94%;
 	height: 430px;
 	position: absolute;
 	background-color: #F3EFED;
@@ -623,12 +715,12 @@ a {
 
 /* Подбор участка */
 .land__choose-inner {
-	width: 1100px;
+	width: 89%;
 	height: 300px;
-	padding-left: 60px;
+	padding-left: 9.5%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 5px;
 }
 /* Заголовок */
 .land__choose-inner .article {
@@ -644,7 +736,7 @@ a {
 .land__choose-inner .choose__panel {
 	display: flex;
 	justify-content: space-between;
-	width: ;
+	width: 99%;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -656,7 +748,7 @@ a {
 /* Слайдеры */
 .land__choose-inner .choose__panel input[type="range"]{
 	margin-top: 25px;
-	width: 369px;
+	width: 330px;
 	height: 14px;
 }
 /* Кнопка */
@@ -710,9 +802,9 @@ a {
 	width: 100%;
 	display: grid;
 	grid-template-rows: 183px 244px 183px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 50% 23.5% 23.5%;
 	box-sizing: border-box;
-	gap: 15px;
+	gap: 1%;
 }
 
 .about p {
@@ -736,6 +828,7 @@ a {
 	font-size: 18px;
 	line-height: 22px;
 	color: #392424;
+	margin-bottom: 20px;
 }
 
 .about > div {
@@ -743,7 +836,8 @@ a {
 	box-sizing: border-box;
 	border-radius: 3px;
 	width: 100%;
-	padding: 15px 90px 0 30px;
+	padding-top: 1%;
+	padding-left: 6%;
 }
 
 .about > div:first-child {
@@ -752,7 +846,7 @@ a {
 
 .place__photo {
 	grid-row: 1/3;
-	grid-column: 1/3;
+	grid-column: 1;
 	display: flex;
 	align-items: flex-end;
 	background-image: url('img/about-comps/place-photo.png');
@@ -762,19 +856,19 @@ a {
 
 .years {
 	grid-row: 1;
-	grid-column: 3/5;
+	grid-column: 2/4;
 }
 
 .support {
 	grid-row: 2;
-	grid-column: 3;
+	grid-column: 2;
 	background-color: #2983D4;
 	color: #fff;
 }
 
 .service {
 	grid-row: 2;
-	grid-column: 4;
+	grid-column: 3;
 	background-color: #F3EFED;
 }
 
@@ -788,12 +882,12 @@ a {
 
 .location {
 	grid-row: 3;
-	grid-column: 1/3;
+	grid-column: 1;
 }
 
 .unique {
 	grid-row: 3;
-	grid-column: 3/5;
+	grid-column: 2/4;
 	background-color: #7EC95C;
 	color: #fff;
 }
@@ -1073,7 +1167,7 @@ a {
 } 
 /* Фон */
 .view__signup-container .background {
-	width: 1785px;
+	width: 100%;
 	height: 430px;
 	position: relative;
 	top: 10%;
@@ -1085,7 +1179,7 @@ a {
 
 .view__signup-container .background::after {
 	content: "";
-	width: 1785px;
+	width: 100%;
 	height: 430px;
 	background-color: #F3EFED;
 	opacity: 0.8;
@@ -1223,10 +1317,10 @@ a {
 /* Сетка */
 .why__us {
 	display: grid;
-	grid-template-columns: 289px 289px 289px 289px;
+	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 240px 214px 214px; 
-	gap: 15px;
-	width: 62.552%;
+	gap: 1.2%;
+	width: 100%%;
 }
 
 .why__us > div {
@@ -1329,7 +1423,7 @@ a {
 }
 
 .why__us .loyal__buyer .panel {
-	width: 530px;
+	width: 95%;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
@@ -1520,6 +1614,17 @@ a {
 	margin-top: 60px;
 	overflow: hidden;
 }
+
+.news__container .container__article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-left: 19%;
+	margin-bottom: 50px;
+}
 /* Панель переключения вида/слайдов */
 .switch__bar {
 	width: 62%;
@@ -1705,7 +1810,6 @@ a {
 	height: 75%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	padding-left: 25px;
 	padding-bottom: 20px;
 }
@@ -1717,6 +1821,8 @@ a {
 	font-size: 24px;
 	line-height: 29px;
 	color: #675A54;
+	margin-top: 25px;
+	margin-bottom: 10px;
 }
 
 .news__card .content .description {
@@ -1870,7 +1976,7 @@ a {
 }
 
 .fb {
-	width: 20px;
+	width: 16px;
 	height: 20px;
 	background-image: url('img/mailing-comps/fb.svg');
 	background-repeat: no-repeat;
@@ -1886,7 +1992,7 @@ a {
 }
 
 .inst {
-	width: 20px;
+	width: 18px;
 	height: 20px;
 	background-image: url('img/mailing-comps/inst.svg');
 	background-repeat: no-repeat;
@@ -1926,7 +2032,7 @@ a {
 
 .footer__navigation {
 	width: 100%;
-	height: 75%;
+	height: 65%;
 	margin: inherit;
 	display: flex;
 	justify-content: space-between;
@@ -1934,10 +2040,10 @@ a {
 
 .footer__navigation .navigation {
 	display: flex;
-	width: 85%;
+	width: 80%;
 	height: 100%;
 	justify-content: space-between;
-	margin-right: 150px;
+	margin-right: 11.5%;
 }
 
 .footer__navigation .navigation div {
@@ -1975,8 +2081,8 @@ a {
 }
 
 .footer__navigation .contacts {
-	width: 25%;
-	height: 100%;
+	width: 20%;
+	height: 85%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1986,7 +2092,9 @@ a {
 	font-size: 13px;
 	line-height: 16px;
 	color: #D1D1D1;
-	margin-left: 50px;
+	margin-right: 80px;
+	position: relative;
+	bottom: 3%;
 }
 
 .footer__navigation .contacts h5 {
@@ -2002,6 +2110,20 @@ a {
 
 .footer__navigation .contacts .phone__number {
 	margin-left: 25px;
+	margin-top: -15px;
+	height: 60%
+	margin-bottom: 1px;
+}
+
+.footer__navigation .contacts .phone__number::before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-image: url(img/footer-comps/phone.svg);
+	position: relative;
+	top: 25%;
+	right: 14%;
 }
 
 .footer__navigation .contacts .adress {
@@ -2009,13 +2131,23 @@ a {
 	flex-direction: column;
 	color: #fff;
 	margin-left: 25px; 
-	height: 40%;
-	margin-top: 10px;
+	height: 41%;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 20px;
+}
+
+.footer__navigation .contacts .adress::before{
+	content: "";
+	width: 14px;
+	height: 16px;
+	display: block;
+	background-image: url(img/footer-comps/map_marker.svg);
+	position: relative;
+	top: 28%;
+	right: 13%;
 }
 
 .footer__navigation .contacts .adress a {
@@ -2031,11 +2163,11 @@ a {
 	font-size: 12px;
 	line-height: 16px;
 	color: #AEAEAE;
-	margin: 25px 0 5px 4px;
+	margin: 25px 0 10px 4px;
 }
 
 .dev__info {
-	width: 98%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	font-family: Montserrat;
@@ -2044,7 +2176,7 @@ a {
 	font-size: 12px;
 	line-height: 16px;
 	color: #AEAEAE;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	margin-left: 2px;
 }
 
