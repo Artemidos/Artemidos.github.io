@@ -3280,6 +3280,11 @@ a {
         margin-left: 5%;
 	}
 
+	.simple__buy-container .article {
+		font-size: 22px;
+	line-height: 27px;
+	}
+
 	.place__photo {
 		background-size: 100%;
 		grid-row: 1;
@@ -3308,6 +3313,11 @@ a {
 	}
 .about-container .article {
 	margin-left: 25px;
+	overflow: hidden;
+}
+
+.about > div {
+	margin-bottom: 4px;
 }
 
 .simple__buy-container {
@@ -3331,6 +3341,10 @@ a {
 
 .item1 .logo, .item2 .logo, .item3 .logo, .item4 .logo {
 	margin-left: 50px;
+}
+
+.steps__item {
+	margin-left: 15%;
 }
 
 .steps__item span {
@@ -3381,7 +3395,8 @@ a {
 
 .view__signup-inner .signup__panel .signup__button {
 	position: relative;
-    top: 150px;
+    top: 170px;
+    transform: scale(1.4);
 }
 
 .view__signup .checkbox {
@@ -3392,6 +3407,12 @@ a {
 .why__us-container {
 	width: 98%;
 	margin-left: 7%;
+}
+
+.why__us-container .article {
+	font-size: 22px;
+	line-height: 27px;
+
 }
 
 .why__us {
@@ -3449,5 +3470,194 @@ a {
 
 .why__us .panel .turn__slide img {
 	display: none;
+}
+
+.questions-container {
+	width: 94%;
+	height: 438px;
+}
+
+.questions-inner {
+	width: 100%;
+	flex-direction: column;
+}
+
+.questions {
+	width: 95%;
+	text-align: center;
+}
+
+.questions h2 {
+	font-size: 21px;
+	line-height: 38px;
+	width: 100%;
+	margin-top: 10%;
+}
+
+.questions__panel .forms {
+	flex-direction: column;
+}
+
+.questions__panel .questions__button {
+	position: relative;
+	top: 50%;
+}
+
+.questions__panel .checkbox {
+	position: relative;
+	bottom: 25%;
+}
+
+.news__container .container__article {
+	margin-left: 5%;
+	font-size: 22px;
+	line-height: 27px;
+}
+
+.news__container .switch__bar {
+	margin-left: 5%;
+}
+
+.news__container .news {
+	margin-left: -14%;
+}
+
+.news__card {
+	height: 465px;
+}
+
+.news__card .photo {
+	width: 263px;
+	background-size: 100%;
+	background-size: cover;
+}
+
+.news__card .content .article {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.news__card .content .description {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.news__card .content {
+	height: 237px;
+}
+
+.footer__navigation .navigation {
+	display: none;
+}
+
+.mailing-container {
+	height: 429px;
+}
+
+.mailing {
+	width: 98%;
+}
+
+.mailing .forms {
+	flex-direction: column;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+.mailing .main__part {
+	flex-wrap: wrap;
+}
+
+.mailing .logo {
+	margin-left: 7%;
+}
+
+.mailing .panel {
+	width: 350px;
+}
+
+.panel .subscribe__button {
+	position: relative;
+    top: 120%;
+    margin-right: 10%;
+}
+
+.mailing .panel .checkbox {
+	position: relative;
+    bottom: 35%;
+    width: 53%;
+    left: 20%;
+}
+
+.mailing .socials {
+	position: relative;
+    top: 43%;
+    right: 78%;
+}
+
+.mailing .socials > div:not(:last-of-type) {
+	margin-right: 5px;
+}
+
+.footer {
+	height: 520px;
+}
+
+.footer-container {
+	width: 100%;
+	height: 600px;
+}
+
+.footer__navigation {
+	height: 32%;
+	margin-top: 20%;
+}
+
+.footer__navigation .contacts {
+	width: 100%;
+	margin-left: 10%;
+	height: 60%;
+}
+
+.rights {
+	margin-top: 0;
+	margin-left: 5%;
+}
+
+.dev__info {
+	flex-direction: column;
+	margin-left: 5%;
+	width: 90%;
+}
+
+.dev__info .developed {
+	color: #CACACA;
+}
+
+.dev__info a {
+	color: #CACACA;
+}
+
+.footer__navigation .contacts h5 {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.footer__navigation .contacts .phone__number .number {
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.footer__navigation .contacts .phone__number p {
+	margin-bottom: 0;
+}
+
+.attention {
+	width: 85%;
+	margin-left: 5%;
+}
+
+.steps__item span {
+	padding-right: 15%;
 }
 }
