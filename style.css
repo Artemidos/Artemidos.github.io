@@ -108,6 +108,17 @@ a {
 	flex-grow: 0;
 	flex-shrink: 1;
 }
+
+	.land__selling-container::after {
+		content: "";
+		width: 38%;
+		height: 15px;
+		display: flex;
+		align-self: flex-start;
+		background-color: #fff;
+		position: relative;
+		bottom: 12px;
+	}
 /* Фото поселка */
 .village__photo {
 	height: 530px;
@@ -174,38 +185,43 @@ a {
 	display: flex;
 	box-sizing: border-box;
 	width: 66%;
+	height: 250px;
 	margin: 0 auto;
 	padding: 0;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	overflow: hidden;
+	border-bottom: 10px solid #6BBD45;
 	/*	 padding-right: 2%;*/
+	justify-content: space-between;
 }
 
-.land__selling::after {
+/*.land__selling::after {
 	content: "";
 	width: 700px;
 	height: 10px;
 	background-color: #6BBD45;
 	display: flex;
 	align-self: flex-end;
-}
+}*/
 /* Преимущества */
 .land__selling .goods {
-	width: 100%;
-	height: 210px;
+	width: 1180px;
+	height: 200px;
 	display: flex;
 	justify-content: space-between;
+	overflow: hidden;
+	flex-shrink: 0;
 	/*	padding-top: 20px;*/
 	/*padding-bottom: 90px;*/
 
 }
 
-.goods::after {
+/*.goods::after {
 	content: "";
 	background-image: linear-gradient(180deg, #2983D4 7%, #6BBD45 30%);
 	width: 10px;
 	height: 101%;
-}
+}*/
 
 .land__selling .goods__item .item1 {
 	margin-left: -10px;
@@ -239,6 +255,27 @@ a {
 	/* or 136% */
 	/* Земля */
 	color: #675A54;
+}
+
+.land__selling::before {
+	content: "";
+	background-image: linear-gradient(180deg, #2983D4 15%, #6BBD45);
+	width: 10px;
+	height: 130px;
+	display: flex;
+	position: relative;
+	left: 99.15%;
+} 
+
+
+
+.land__selling::after {
+	content: "";
+	background-color: #6BBD45;
+	width: 10px;
+	height: 130px;
+	display: flex;
+	align-self: flex-end;
 }
 
 /* Логотипы преимуществ */
@@ -2218,8 +2255,8 @@ a {
 }
 
 .burger {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	background-image: url('img/footer-comps/burger.svg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -2316,7 +2353,7 @@ a {
 
 }
 
-@media (min-width: 1440px) and (max-width: 1669px) {
+@media (min-width: 1441px) and (max-width: 1669px) {
 	.item1 .logo::after, .item2 .logo::after, .item3 .logo::after {
 		width: 40%;
 		margin-left: 52%;
@@ -2513,7 +2550,7 @@ a {
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 	.header-container .navigation, .header__callgroup {
 		display: none;
 	}
@@ -2522,18 +2559,17 @@ a {
 		display: block;
 	}
 
-	.dark__bg::after {
+	.land__selling::before {
 		content: "";
-		width: 10px;
+		width: 15px;
 		height: 30px;
 		display: flex;
-		position: relative;
-		left: 50.6%;
-		bottom: -20px;
+		align-self: flex-end;
 		background-color: #2983D4;
+		left: 98.686%;
 	}
 
-	.goods::before {
+	.land__selling::after {
 		content: "ri";
 		color: #6BBD45;
 		width: 10px;
@@ -2541,7 +2577,7 @@ a {
 		display: flex;
 		position: relative;
 		background-color: #6BBD45;
-		left: 98.7%;
+		left: 98.8%;
 		top: 90%;
 	}
 
@@ -2704,5 +2740,35 @@ a {
 
 	.news__card .content .read__full {
 		font-size: 16px;
+	}
+
+	.goods::after {
+		display: none;
+	}
+
+	.offers__container {
+		margin-left: -15%;
+	}
+
+	.mailing {
+		width: 97%;
+	}
+
+	.footer-container {
+		width: 95%;
+	}
+
+	.contacts p {
+		margin-bottom: 0;
+		margin-top: 5px;
+	}
+
+	.footer__navigation .contacts {
+		margin-right: 20px;
+	}
+
+	.footer__navigation .navigation {
+		margin-right: 10%;
+		margin-left: 2%;
 	}
 }
