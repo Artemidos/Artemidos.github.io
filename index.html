@@ -69,6 +69,30 @@
 					<a href="#"><div class="callback__button-container">
 					Заказать звонок </div>
 				</a>
+				<div class="callback">
+					<div class="callback__close"></div>
+					<div class="article">
+						<h2>Обратный звонок</h2>
+						<span>Оставьте контактные данные, и мы вам перезвоним!</span>
+					</div>
+					<div class="forms">
+						<input type="text" name="callback-name" id="callback-name" placeholder="   Имя" size="40" required="" value="">
+						<input type="tel" name="callback-tel" id="callback-tel" placeholder="   Телефон" size="40" required="" value="">
+						<div class="checkbox">
+							<input type="checkbox" name="callback-checkbox" id="callback-checkbox" required="">
+							<label for="callback-checkbox">Подтверждаю согласие с <a href="#"><strong>политикой <br>обработки персональных данных</strong></a></label>
+						</div>
+						<button class="callback__button" form="callback-name callback-tel callback-checkbox" action="submit">Отправить</button>
+					</div>
+				</div>
+				<div class="callback__ordered">
+					<div class="callback__close"></div>
+					<div class="article">
+						<h2>Спасибо! <br>Заявка отправлена</h2>
+						<span>В ближайшее время с вами свяжется наш специалист</span>
+					</div>
+					<div class="logo"></div>
+				</div>
 			</div>
 		</div>
 		<button class="burger"></button>
@@ -200,17 +224,17 @@
 	<section class="offers__container">
 		<div class="switch__bar">
 			<div class="display__switch">
-				<button class="list active">Списком</button>
+				<button class="list selected">Списком</button>
 				<button class="map">На карте</button>
 			</div>
 			<div class="turn__card">
-				<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow__left">
-				<img src="img/turn__card-comps/dot.svg" alt="" class="dot">
-				<img src="img/turn__card-comps/dot.svg" alt="" class="dot">
-				<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow__right">
+				<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow unactive">
+				<div class="dot active"></div>
+				<div class="dot"></div>
+				<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow">
 			</div>
 		</div>
-		<div class="offers">
+		<div class="offers selected">
 			<div class="offer__card card1">
 
 				<div class="photo">
@@ -386,11 +410,11 @@
 			<section class="simple__buy-container">
 				<h2 class="article">Купить участок просто</h2>
 				<div class="buy__switch">
-					<button class="steps active">Этапы покупки</button>
+					<button class="steps selected">Этапы покупки</button>
 					<button class="installment">Рассрочка</button>
 					<button class="mortgage">Ипотека</button>
 				</div>
-				<div class="steps-container">
+				<div class="steps-container selected">
 					<div class="steps__item item1">
 						<div class="logo"></div>
 						<span>Оставьте заявку на обратный <br>звонок</span>
@@ -408,8 +432,9 @@
 						<span>Участок ваш!</span>
 					</div>
 				</div>	
+				<a class="installment__more" href="#">Подробнее о рассрочке</a>
 				<div class="installment-container">
-					<a href="#">Подробнее о рассрочке</a>
+					<!-- <a href="#">Подробнее о рассрочке</a> -->
 					<div class="installment__item item1">
 						<div class="logo"></div>
 						<strong>Выгодно</strong>
@@ -431,13 +456,37 @@
 						<span>Индивидуальное <br>обсуждение условий</span>
 					</div>
 				</div>
+				<a class="mortgage__more" href="#">Подробнее об ипотеке</a>
+				<a class="mortgage__calculator" href="#">Калькулятор рассчета ипотеки</a>
+				<div class="mortgage-container">
+					<div class="mortgage__item item1">
+						<div class="logo"></div>
+						<strong>Ведущие банки</strong>
+						<span>&laquo;Сбербанк&raquo; и <br>&laquo;Запсибкомбанк&raquo;</span>
+					</div>
+					<div class="mortgage__item item2">
+						<div class="logo"></div>
+						<strong>% Ставки</strong>
+						<span>От 10,8%</span>
+					</div>
+					<div class="mortgage__item item3">
+						<div class="logo"></div>
+						<strong>Первоначальный взнос</strong>
+						<span>От 0%</span>
+					</div>
+					<div class="mortgage__item item4">
+						<div class="logo"></div>
+						<strong>Срок</strong>
+						<span>От 7 до 30 лет</span>
+					</div>
+				</div>
 			</section>
 
 			<section class="view__signup-container">
 				<div class="border"></div>
 				<div class="background"></div>
 				<div class="view__signup">
-					<div class="view__signup-inner">
+					<div class="view__signup-inner selected">
 						<div class="text">
 							<h2 class="article">Запишитесь <br>на просмотр</h2>
 							<div class="description">
@@ -452,6 +501,20 @@
 						<div class="checkbox">
 							<input type="checkbox" name="questions__agree" id="questions__agree">
 							<label for="questions__agree">Подтверждаю согласие с <span>политикой обработки персональных данных</span></label>
+						</div>
+					</div>
+					<div class="view__signup-completed">
+						<div class="text">
+							<h2 class="article">Запишитесь <br>на просмотр</h2>
+							<div class="description">
+								Эксперт по недвижимости быстро подберет вам <br>подходящий вариант земельного участка. А еще проведёт <br>вам экскурсию по счастливой загородной жизни. 
+							</div>
+						</div>
+						<div class="signup__completed">
+							<h3 class="article">Спасибо! Заявка отправлена.</h2>
+							<div class="description">
+								В ближайшее время с вами свяжется наш специалист
+							</div>
 						</div>
 					</div>
 				</div>
@@ -472,15 +535,36 @@
 							</div>
 							<div class="logo"></div>
 						</div>
+						<div class="tell-n-show">
+							<div>
+								<span>Рассказываем <br>и показываем</span>
+								<p>Наши специалисты в удобное для <br>вас время проведут экскурсии по <br>коттеджным поселкам компании <br>«Навигатор», расскажут и покажут <br>все преимущества жизни за <br>городом в красивых и <br>благоустроенных поселках.</p>
+							</div>
+							<div class="logo"></div>
+						</div>
+						<div class="escort">
+							<div>
+								<span>Сопровождение <br>сделки юристом</span>
+								<p>Ведущий юрисконсульт окажет <br>полный спектр услуг – от <br>оформления договора <br>купли-продажи до сдачи <br>документов на государственную <br>регистрацию.</p>
+							</div>
+							<div class="logo"></div>
+						</div>
+						<div class="will-help">
+							<div>
+								<span>Поможем с выбором</span>
+								<p>Купить земельный участок в <br>Тюмени под ИЖС очень просто: <br>мы всегда предложим <br>оптимальный вариант с учетом <br>ваших пожеланий и <br>представлений!</p>
+							</div>
+							<div class="logo"></div>
+						</div>
 						<div class="panel">
 							<button class="choose__button">Подобрать участок</button>
 							<div class="turn__slide">
-								<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow__left">
+								<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow unactive">
+								<div class="dot active"></div>
 								<div class="dot"></div>
 								<div class="dot"></div>
 								<div class="dot"></div>
-								<div class="dot"></div>
-								<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow__right">
+								<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow">
 							</div>
 						</div>
 					</div>
@@ -518,12 +602,12 @@
 						<button class="to__useful">Полезные статьи</button>
 					</div>
 					<div class="turn__card">
-						<img src="img/turn__card-comps/arrow-left.svg" alt="" class="arrow__left">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<img src="img/turn__card-comps/arrow-right.svg" alt="" class="arrow__right">
+						<img class="arrow unactive" src="img/turn__card-comps/arrow-left.svg" alt="">
+						<div class="dot active"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<img class="arrow" src="img/turn__card-comps/arrow-right.svg" alt="">
 					</div>
 				</div>
 				<div class="news">

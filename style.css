@@ -30,7 +30,6 @@ a {
 
 /* Навигация */
 .navigation {
-	margin-right:;
 	width: 56%;
 	height: 80px;
 	margin-right: 3%;
@@ -64,7 +63,7 @@ a {
 	/*height: 350px;*/
 	box-sizing: border-box;
 	position: absolute;
-	top: 8%;
+	/*top: 8%;*/
 	background-color: #fff;
 	/*padding: 25px 0 0 25px;*/
 	border: 1px solid #EAEAEA;
@@ -83,6 +82,10 @@ a {
 	padding: 13px 25px 13px 25px;
 }
 
+.navigation__item .submenu a:hover {
+	color: #6BBD45;
+}
+
 .navigation__item .submenu::before {
 	content: "";
 	/*width: 100%;*/
@@ -97,6 +100,7 @@ a {
 
 .active .submenu {
 	display: flex;
+	z-index: 5;
 }
 
 .navigation__item::after {
@@ -114,6 +118,15 @@ a {
 
 .navigation__item:hover::after {
 	display: block;
+	z-index: 1;
+}
+
+.navigation__item.active:hover div {
+	margin-top: 0;
+}
+
+.navigation__item.active:hover::after {
+	display: none;
 }
 
 /* Связь */
@@ -161,6 +174,227 @@ a {
 	margin-right: 8%;
 }
 
+/* Обратный звонок */
+
+.callback.opened {
+	display: flex;
+}
+
+.callback {
+	width: 530px;
+	height: 572px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	border-top: 10px solid #2983D4;
+	border-left: 10px solid #2983D4;
+	position: fixed;
+	left: 35%;
+	top: 15%;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.callback::before {
+	content: "";
+	display: block;
+	width: 10px;
+	background-image: linear-gradient(180deg, #7EC95C 85%, #2A83D4 95%);
+	height: 94%;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 50%;
+	top: 52.2%;
+}
+
+.callback::after {
+	content: "";
+	display: block;
+	width: 10px;
+	background-image: linear-gradient(180deg, #2A83D4 5%, #7EC95C 15%);
+	height: 100%;
+	position: absolute;
+	left: 98%;
+}
+
+.callback__close {
+	width: 14px;
+	height: 14px;
+	background-image: url('img/callback-comps/callback-close.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	align-self: flex-end;
+	margin: 25px 30px 0 0;
+}
+
+.callback__close:hover {
+	cursor: pointer;
+}
+
+.callback .article h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 5px;
+}
+
+.callback .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #675A54;
+	margin-bottom: 40px;
+}
+
+.callback .forms {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.callback .forms input:nth-of-type(2) {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.callback .forms input {
+	height: 45px;
+}
+
+.callback .checkbox {
+	display: flex;
+	align-self: flex-start;
+	margin-bottom: 30px;
+}
+
+.callback .checkbox, .callback .checkbox a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #827D7B;
+}
+
+.callback .checkbox a:hover {
+	text-decoration-line: underline;
+}
+
+.callback .checkbox label {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.callback .checkbox input {
+	/*align-self: flex-start;*/
+	height: 20px;
+}
+
+.callback__button {
+	width: 216px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #6BBD45;
+	justify-content: center;
+	border-radius: 20px 0 20px 0;
+	color: #fff;
+	border: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	align-self: flex-start;
+}
+
+.callback__button:focus {
+	outline: none;
+}
+
+.callback__button:hover {
+	cursor: pointer;
+}
+
+/* Спасибо! Заявка отправлена */
+.callback__ordered.opened {
+	display: flex;
+}
+
+.callback__ordered {
+	width: 530px;
+	height: 572px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	border-top: 10px solid #2983D4;
+	border-left: 10px solid #2983D4;
+	position: fixed;
+	left: 35%;
+	top: 15%;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.callback__ordered::before {
+	content: "";
+	display: block;
+	width: 10px;
+	background-image: linear-gradient(180deg, #7EC95C 85%, #2A83D4 95%);
+	height: 94%;
+	transform: rotate(90deg);
+	position: absolute;
+	right: 50%;
+	top: 52.2%;
+}
+
+.callback__ordered::after {
+	content: "";
+	display: block;
+	width: 10px;
+	background-image: linear-gradient(180deg, #2A83D4 5%, #7EC95C 15%);
+	height: 100%;
+	position: absolute;
+	left: 98%;
+}
+
+.callback__ordered .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #675A54;
+	margin-bottom: 40px;
+}
+
+.callback__ordered .article h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 5px;
+}
+
+.callback__ordered .logo {
+	width: 195px;
+	height: 180px;
+	background-image: url('img/callback-comps/phone.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 18%;
+	right: 20%;
+}
 /* Продажа земельных участков + фото */
 .land__selling-container {
 	box-sizing: border-box;
@@ -270,14 +504,12 @@ a {
 	flex-shrink: 0;
 }
 
-.land__selling .goods__item.item1 {
-	margin-left: -10px;
-}
 
 .land__selling .goods__item {
 	box-sizing: border-box;
 	display: flex;
 	padding-top: 30px;
+	width: 23%;
 }
 
 .land__selling .goods__item h4 {
@@ -291,6 +523,11 @@ a {
 	/* Земля */
 	color: #675A54;
 	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.goods .item1 .text {
+	padding-left: 10px;
 }
 
 .land__selling .goods__item span {
@@ -308,11 +545,11 @@ a {
 .land__selling::before {
 	content: "";
 	background-image: linear-gradient(180deg, #2983D4 15%, #6BBD45);
-	width: 15px;
+	width: 10px;
 	height: 130px;
 	display: flex;
-	position: relative;
-	left: 99.15%;
+	position: absolute;
+	left: 80.8%;
 }
 
 .land__selling::after {
@@ -324,11 +561,11 @@ a {
 	align-self: flex-end;
 }
 
-/* Логотипы преимуществ 
+/* Логотипы преимуществ */
 
 .item__logo {
 	box-sizing: border-box;
-	margin-top: 27px;
+	margin-top: 3px;
 }
 
 /* Бирка конфиденциальности */
@@ -396,7 +633,8 @@ a {
 	border-radius: 30px;
 }
 
-.offers__container .display__switch .active {
+
+.offers__container .display__switch .selected {
 	background-color: #6BBD45;
 	height: inherit-1px;
 	width: 134px;
@@ -417,12 +655,21 @@ a {
 	width: 105px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.offers__container .turn__card.hidden {
+	display: none;
 }
 /* Карточки */
+.offers.selected {
+	display: flex;
+}
+
 .offers {
 	position: relative;
 	left: 19%;
-	display: flex;
+	display: none;
 	width: 1603px;
 	margin-bottom: 100px;
 }
@@ -682,6 +929,10 @@ a {
 	background-position: center;
 }
 /* На карте */
+.offers-on__map.selected {
+	display: flex;
+}
+
 .offers-on__map {
 	display: none;
 	width: 1200px;
@@ -1075,7 +1326,7 @@ a {
 	text-align: center;
 }
 
-.buy__switch .active {
+.buy__switch .selected {
 	background-color: #6BBD45;
 	width: 173px;
 	color: #fff;
@@ -1089,6 +1340,10 @@ a {
 
 .steps:hover, .installment:hover, .mortgage:hover {
 	cursor: pointer;
+}
+
+.steps-container.selected {
+	display: flex;
 }
 
 .steps-container {
@@ -1243,13 +1498,21 @@ a {
 }
 
 /* Рассрочка */
-.installment-container {
-	width: 100%;
+.installment-container.selected {
 	display: flex;
 }
 
-.installment-container > a {
+.installment-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	display: none;
+}
+
+.installment__more {
 	position: relative;
+	left: 84%;
+	bottom: 65px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -1258,10 +1521,10 @@ a {
 	color: #2983D4;
 	width: 185px;
 	height: 20px;
+	display: none;
 }
 
 .installment__item {
-	width: 28%;
 	display: flex;
 	flex-direction: column;
 	font-family: Montserrat;
@@ -1270,6 +1533,7 @@ a {
 	font-size: 14px;
 	line-height: 19px;
 	color: #675A54;
+	width: 14%;
 }
 
 .installment__item strong {
@@ -1310,6 +1574,101 @@ a {
 	width: 100%;
 	height: 125px;
 	background-image: url('img/simple_buy-comps/star.svg');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+/* Ипотека */
+.mortgage-container.selected {
+	display: flex;
+}
+
+.mortgage-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	display: none;
+}
+
+.mortgage__more {
+	position: relative;
+	left: 56%;
+	bottom: 65px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #2983D4;
+	width: 185px;
+	height: 20px;
+	display: none;
+}
+
+.mortgage__calculator {
+	position: relative;
+	left: 61%;
+	bottom: 65px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #2983D4;
+	width: 185px;
+	height: 20px;
+	display: none;
+}
+
+.mortgage__item {
+	display: flex;
+	flex-direction: column;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #675A54;
+	width: 14%;
+}
+
+.mortgage__item strong {
+	margin-bottom: 15px;
+}
+
+.mortgage__item .logo {
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.mortgage__item.item1 .logo {
+	width: 100%;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/bank.svg');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.mortgage__item.item2 .logo {
+	width: 100%;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/percentage.svg');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.mortgage__item.item3 .logo {
+	width: 100%;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/wallet.svg');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.mortgage__item.item4 .logo {
+	width: 100%;
+	height: 125px;
+	background-image: url('img/simple_buy-comps/clock.svg');
 	background-repeat: no-repeat;
 	background-position: left bottom;
 }
@@ -1388,6 +1747,9 @@ a {
 	box-sizing: border-box;
 }
 
+.view__signup-inner.selected {
+	display: flex;
+}
 
 .view__signup-inner {
 	width: 89%;
@@ -1396,6 +1758,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	padding-top: 60px;
+	display: none;
 }
 /* Заголовок */
 .view__signup-inner .text {
@@ -1486,6 +1849,72 @@ a {
 	font-weight: bold;
 }
 
+/* Заявка отправлена */
+.view__signup-completed.selected {
+	display: flex;
+}
+.view__signup-completed {
+	width: 89%;
+	height: 300px;
+	padding-left: 110px;
+	display: none;
+	flex-direction: column;
+	padding-top: 60px;
+}
+
+.view__signup-completed .text {
+	display: flex;
+}
+
+.view__signup-completed .text .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #675A54;
+	margin-bottom: 60px;
+}
+
+.view__signup-completed .text .description {
+	height: 100px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #675A54;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+.signup__completed {
+	width: 89%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.view__signup-completed .text {
+	height: 150px;
+}
+
+.signup__completed .article {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #675A54;
+}
+
+.signup__completed .description {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+	color: #675A54;
+}
 /* Почему выбирают земельные участки у нас? */
 .why__us-container {
 	width: 62.552%;
@@ -1582,6 +2011,7 @@ a {
 	justify-content: space-between;
 }
 
+/* Программа лояльный покпуатель*/
 .why__us .loyal__buyer .article {
 	font-family: Montserrat;
 	font-style: normal;
@@ -1589,6 +2019,15 @@ a {
 	font-size: 24px;
 	line-height: 29px;
 	width: 535px;
+	display: flex;
+	justify-content: space-around;
+	/*display: none;*/
+}
+
+.loyal__buyer .article .logo {
+	width: 193px;
+	height: 177px;
+	background-image: url('img/why_us-comps/loyal_buyer.svg');
 }
 
 .why__us .loyal__buyer .article p {
@@ -1599,6 +2038,88 @@ a {
 	line-height: 22px;
 }
 
+/* Рассказываем и показываем */
+.why__us .loyal__buyer .tell-n-show {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	width: 535px;
+	display: flex;
+	justify-content: space-around;
+	display: none;
+}
+
+.loyal__buyer .tell-n-show .logo {
+	width: 193px;
+	height: 177px;
+	background-image: url('img/why_us-comps/tell-n-show.svg');
+}
+
+.why__us .loyal__buyer .tell-n-show p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* Сопровождение сделки юристом */
+.why__us .loyal__buyer .escort {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	width: 535px;
+	display: flex;
+	justify-content: space-around;
+	display: none;
+}
+
+.loyal__buyer .escort .logo {
+	width: 193px;
+	height: 177px;
+	background-image: url('img/why_us-comps/escort.svg');
+}
+
+.why__us .loyal__buyer .escort p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* Поможем с выбором */
+.why__us .loyal__buyer .will-help {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	width: 535px;
+	display: flex;
+	justify-content: space-around;
+	display: none;
+}
+
+.loyal__buyer .will-help .logo {
+	width: 193px;
+	height: 177px;
+	background-image: url('img/why_us-comps/will-help.svg');
+}
+
+.why__us .loyal__buyer .will-help p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* Электричество */
 .why__us .electricity {
 	grid-row: 2;
 	grid-column: 3/5;
@@ -1653,17 +2174,6 @@ a {
 	align-self: flex-end;
 }
 
-.why__us .loyal__buyer .article {
-	display: flex;
-	justify-content: space-around;
-}
-
-.loyal__buyer .article .logo {
-	width: 193px;
-	height: 177px;
-	background-image: url('img/why_us-comps/loyal_buyer.svg');
-}
-
 .loyal__buyer .panel .turn__slide .dot {
 	width: 6px;
 	height: 6px;
@@ -1671,14 +2181,14 @@ a {
 	border-radius: 3px;
 }
 
-.loyal__buyer .panel .turn__slide .dot:first-of-type {
-	background-color: #6BBD45;
-}
-
 .loyal__buyer .panel .turn__slide .dot:hover {
 	background-color: #6BBD45;
 	transition: 0.4s;
 	cursor: pointer;
+}
+
+.loyal__buyer .panel .turn__slide .dot.active {
+	background-color: #6BBD45;
 }
 
 /* Вопросы */
@@ -1912,21 +2422,21 @@ a {
 	outline: none;
 }
 /* Пролистывание карточек */
-.switch__bar .turn__card {
+.news__container .switch__bar .turn__card {
 	width: 142px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.switch__bar .turn__card div {
+.switch__bar .turn__card .dot {
 	width: 6px;
 	height: 6px;
 	background-color: #D1D1D1;
 	border-radius: 3px;
 }
 
-.switch__bar .turn__card div:first-of-type {
+.switch__bar .turn__card .dot.active {
 	background-color: #7EC95C;
 }
 
@@ -1934,6 +2444,18 @@ a {
 	background-color: #7EC95C;
 	transition: 0.3s;
 	cursor: pointer;
+}
+
+.arrow:hover {
+	cursor: pointer;
+}
+
+.arrow.unactive {
+	filter: saturate(0) opacity(0.5);
+}
+
+.arrow.unactive:hover {
+	cursor: initial;
 }
 
 /* Карточки */
@@ -3435,6 +3957,13 @@ a {
 		overflow-x: hidden;
 	}
 
+	.land__selling::before {
+		left: 89.6%;
+    	height: 30px;
+    	background-color: #2983D4;
+    	background-image: none;
+	}
+
 	.header-container .navigation, .header__callgroup {
 		display: none;
 	}
@@ -3984,5 +4513,9 @@ a {
 
 .burger__menu .navigation {
 	display: flex;
+}
+
+.land__selling {
+	overflow: scroll;
 }
 }
