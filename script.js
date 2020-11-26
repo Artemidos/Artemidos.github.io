@@ -34,11 +34,12 @@ let callBackButton = document.querySelector('.callback__button');
 let callBackOrdered = document.querySelector('.callback__ordered');
 let callBackNameForm = document.getElementsByName('callback-name');
 let callBackTelForm = document.getElementsByName('callback-tel');
+let callBackCheckbox = document.querySelector('.callback__checkbox')
 let isFormFilled = false;
 
 /* Проверка формы */
 const formCheck = function () {
-	if (callBackNameForm.value == 0 || callBackTelForm.value == 0) {
+	if (callBackNameForm.value == 0 || callBackTelForm.value == 0 || callBackCheckbox.checked == false) {
 		isFormFilled = false;
 	} else {
 		isFormFilled = true;
@@ -56,7 +57,7 @@ callBackButton.onclick = function () {
 		callBack.classList.remove('opened');
 		callBackOrdered.classList.add('opened');
 	} else {
-		alert('Заполните оба поля');
+		alert('Заполните оба поля и подтвердите согласие с обработкой данных');
 	}
 }
 
@@ -90,6 +91,14 @@ offersMap.onclick = function() {
 	offersList.classList.remove('selected');
 	listDisplay.classList.remove('selected');
 }
+
+/* Перключение стрелочками */
+let offersCardsArrows = document.querySelectorAll('.offers__container .arrow');
+let offersCards = document.querySelectorAll('.offer__card');
+
+offersCardsArrows[1].onclick = function() {
+	
+	}
 
 /* Купить участок просто: переключение */
 let simpleBuySteps = document.querySelector('.steps');
@@ -127,3 +136,140 @@ simpleBuyMortgage.onclick = function () {
 }
 
 /* Запишитесь на просмотр */
+let viewSignup = document.querySelector('.view__signup-inner');
+let viewOrdered = document.querySelector('.view__signup-completed');
+let viewSignupButton = document.querySelector('.signup__button');
+let viewSignupName = document.querySelector('.signup__panel .name__form');
+let viewSignupTel = document.querySelector('.signup__panel .phone__form');
+let viewSignupCheckbox = document.querySelector('.checkbox .signup__agree');
+let isSignupFormFilled = false;
+
+const signupFormCheck = function () {
+	if (viewSignupName.value == 0 || viewSignupTel.value == 0 || viewSignupCheckbox.checked == false) {
+		isSignupFormFilled = false;
+	} else {
+		isSignupFormFilled = true;
+	}
+	return isSignupFormFilled;
+}
+
+viewSignupButton.onclick = function () {
+	signupFormCheck();
+	if (isSignupFormFilled == true) {
+		viewOrdered.classList.add('selected');
+		viewSignup.classList.remove('selected');
+	} else {
+		alert('Заполните оба поля и подтвердите согласие с обработкой данных');
+	}
+}
+
+/* Лояльный покупатель переключение слайдов */
+let loyalBuyerDots = document.querySelectorAll('.why__us .panel .turn__slide .dot');
+let loyalBuyerArrows = document.querySelectorAll('.why__us .panel .turn__slide .arrow');
+let loyalBuyerArticle = document.querySelectorAll('.why__us .loyal__buyer .article');
+let loyalBuyerTellNShow = document.querySelectorAll('.why__us .loyal__buyer .tell-n-show');
+let loyalBuyerEscort = document.querySelectorAll('.why__us .loyal__buyer .escort');
+let loyalBuyerWillHelp = document.querySelectorAll('.why__us .loyal__buyer .will-help');
+
+/* Вопросы */
+let questions = document.querySelector('.questions-inner');
+let questionsOrdered = document.querySelector('.questions__ordered');
+let questionsNameForm = document.querySelector('.questions-inner .name__form');
+let questionsTelForm = document.querySelector('.questions-inner .phone__form');
+let questionsCheckbox = document.querySelector('.questions-inner .questions__checkbox');
+let questionsButton = document.querySelector('.questions__button');
+let isQuestionsFormFilled = false;
+
+const questionsFormCheck = function () {
+	if (questionsNameForm.value == 0 || questionsTelForm.value == 0 || questionsCheckbox.checked == false) {
+		isQuestionsFormFilled = false;
+	} else {
+		isQuestionsFormFilled = true;
+	}
+	return isQuestionsFormFilled;
+}
+
+questionsButton.onclick = function () {
+	questionsFormCheck();
+	if (isQuestionsFormFilled == true) {
+		questionsOrdered.classList.add('selected');
+		questions.classList.remove('selected');
+	} else {
+		alert('Заполните оба поля и подтвердите согласие с обработкой данных');
+	}
+}
+
+/* Картчки новостей и пр. */
+let news = document.querySelector('.news');
+let stories = document.querySelector('.stories');
+let useful = document.querySelector('.useful');
+let toNews = document.querySelector('.to__news');
+let toStories = document.querySelector('.to__stories');
+let toUseful = document.querySelector('.to__useful');
+
+toNews.onclick = function () {
+	toNews.classList.add('selected');
+	news.classList.add('selected');
+	toStories.classList.remove('selected');
+	stories.classList.remove('selected');
+	toUseful.classList.remove('selected');
+	useful.classList.remove('selected');
+}
+
+toStories.onclick = function () {
+	toNews.classList.remove('selected');
+	news.classList.remove('selected');
+	toStories.classList.add('selected');
+	stories.classList.add('selected');
+	toUseful.classList.remove('selected');
+	useful.classList.remove('selected');
+}
+
+toUseful.onclick = function () {
+	toNews.classList.remove('selected');
+	news.classList.remove('selected');
+	toStories.classList.remove('selected');
+	stories.classList.remove('selected');
+	toUseful.classList.add('selected');
+	useful.classList.add('selected');
+}
+
+/* Подписаться на новости и акции */
+let mailingPanel = document.querySelector('.mailing .panel');
+let subscribeCompleted = document.querySelector('.mailing .subscribe__completed');
+let mailingEmail = document.querySelector('.mailing .forms .email__form');
+let mailingCheckbox = document.querySelector('.mailing__checkbox');
+let subscribeButton = document.querySelector('.panel .subscribe__button');
+let isMailingFormFilled = false;
+
+const mailingFormCheck = function () {
+	if (mailingEmail.value == 0 || mailingCheckbox.checked == false) {
+		isMailingFormFilled = false;
+	} else {
+		isMailingFormFilled = true;
+	}
+	return isMailingFormFilled;
+}
+
+subscribeButton.onclick = function () {
+	mailingFormCheck();
+	if (isMailingFormFilled == true) {
+		mailingPanel.classList.remove('selected');
+		subscribeCompleted.classList.add('selected');
+	} else {
+		alert('Заполните поле и подтвердите согласие с политикой обработки персональных данных');
+	}
+}
+
+/* Меню на мобилке */
+let burger = document.querySelector('.burger');
+let burgerMenu = document.querySelector('.burger__menu');
+let burgerClose = document.querySelector('.burger__menu .close');
+
+burger.onclick = function () {
+	burgerMenu.classList.add('active');
+}
+
+burgerClose.onclick = function () {
+	burgerMenu.classList.remove('active');
+}
