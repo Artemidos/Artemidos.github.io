@@ -1,5 +1,5 @@
 /* Всплывающие пункты меню */
-let nav = document.querySelectorAll('.navigation__item');
+let nav = document.querySelectorAll('.navigation-desktop .navigation__item');
 
 var isOpen = false;
 
@@ -265,11 +265,43 @@ subscribeButton.onclick = function () {
 let burger = document.querySelector('.burger');
 let burgerMenu = document.querySelector('.burger__menu');
 let burgerClose = document.querySelector('.burger__menu .close');
+let burgerNav = document.querySelectorAll('.burger__menu .navigation__item');
 
 burger.onclick = function () {
-	burgerMenu.classList.add('active');
+	burgerMenu.classList.add('opened');
 }
 
 burgerClose.onclick = function () {
-	burgerMenu.classList.remove('active');
+	burgerMenu.classList.remove('opened');
+}
+
+const burgerMenuHandler = function () {
+	if (this.classList.contains('.navigation__item') === false) {
+		for (let burgerNavItem of burgerNav) {
+			burgerNavItem.classList.remove('.active');
+		}
+	}
+	if (this.classList.contains('active') === false) {
+			for (let burgerNavItem of burgerNav) {
+    			burgerNavItem.classList.remove('active');
+			}
+    	    this.classList.add('active');
+    	    isOpen = true;
+    } else {
+    	this.classList.remove('active');
+    	isOpen = false;
+    }
+}
+
+for (let burgerNavItem of burgerNav) {
+	burgerNavItem.addEventListener('click', burgerMenuHandler);
+}
+
+/* Обратный звонок на мобилке */
+let burgerCallOrder = document.querySelector('.burger__menu .callback__button-container');
+
+burgerCallOrder.onclick = function () {
+	callBack.classList.add('opened');
+	burgerMenu.classList.remove('opened');
+
 }
