@@ -5101,20 +5101,23 @@ a {
 			font-size: 22px;
 			line-height: 27px;
 			margin-bottom: 20px;
+			margin-top: 0;
 		}
 
 		.land__choose-inner .choose__panel {
 			flex-direction: column;
-
+			height: 70%;
+			padding-top: 5%;
 		}
 
 		.land__choose-inner .choose__panel input[type="range"] {
 			width: 190px;
 			margin-left: 5%;
+			transform: scale(1.2);
 		}
 
 		.land__choose-inner .choose__panel .choose__button {
-			transform: scale(0.7) translateX(-35px);
+			transform: translateX(0px);
 		}
 
 		.about {
@@ -5244,6 +5247,7 @@ a {
 
 		.view__signup-inner .text {
 			flex-direction: column;
+			height: 40%;
 		}
 
 		.view__signup-inner .article {
@@ -5253,19 +5257,35 @@ a {
 		}
 
 		.view__signup-inner .description {
-			font-size: 10px;
-			line-height: 18px;
-			width: 180px;
+			font-size: 13.5px;
+			line-height: 15px;
+			width: 100%;
 			height: 130px;
 			margin-top: 10px;
 			margin-left: 0px;
 		}
 
+		.view__signup-inner {
+			height: 430px;
+			width: 100%;
+		}
+
+		.view__signup-inner .signup__panel {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
 		.view__signup-inner .signup__panel form {
 			flex-direction: column;
 			width: 200px;
-			transform: scale(0.5) translateX(-30px);
-			margin-top: -55px;
+			transform: scale(0.7) translateX(30px);
+			margin-top: -15px;
+		}
+
+		.view__signup-inner .checkbox label {
+			position: relative;
+    		left: 5px;
+    		bottom: 3px;
 		}
 
 		.name__form, .phone__form {
@@ -5275,13 +5295,34 @@ a {
 
 		.view__signup-inner .signup__panel .signup__button {
 			position: relative;
-			top: 170px;
+			top: 95px;
+			right: 9%;
 			transform: scale(1.4);
+
 		}
 
 		.view__signup .checkbox {
 			position: relative;
-			bottom: 70px;
+			bottom: 21%;
+			display: flex;
+		}
+
+		.view__signup-container {
+			width: 100%;
+		}
+
+		.view__signup-container .border {
+			width: 85%;
+			left: 7%;
+		}
+
+		.view__signup {
+			width: 80%;
+			height: 430px;
+		}
+
+		.view__signup-inner {
+			width: ;
 		}
 
 		.why__us-container {
@@ -5688,9 +5729,10 @@ a {
 			overflow: scroll;
 		}
 
-		.offers-on__map {
+		.offers__container .offers-on__map.selected {
 			background-image: url('img/offers-comps/map-mobile.png');
 			height: 308px;
+			bottom: 100px;
 		}
 
 		.about__mobile {
@@ -5752,6 +5794,8 @@ a {
 			padding-left: 0px;
 			padding-top: 0;
 			transform: scale(0.8);
+			width: 100%;
+			height: 400px;
 		}
 
 		.view__signup-completed .text {
@@ -5765,16 +5809,17 @@ a {
 		}
 
 		.view__signup-completed .text .description {
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 18px;
-			width: 180px;
+			width: 100%;
 			height: 130px;
 			margin-top: 10px;
 			margin-left: 0px;
 		}
 
 		.signup__completed .description {
-			width: 180px;
+			width: 100%;
+			font-size: 19px;
 		}
 
 		.signup__completed .article {
@@ -5934,5 +5979,39 @@ a {
 		.why__us-container .article {
 			font-size: 22px;
 			line-height: 27px;
+		}
+
+		.offers.owl-carousel .owl-nav, .offers.owl-carousel .owl-dots {
+			display: none;
+		}
+
+		.offers__container {
+			height: 450px;
+		}
+
+		.land__choose-container .border {
+			width: 85%;
+			left: 6%;
+		}
+
+		.land__choose-container {
+			width: 100%;
+		}
+
+		.bg-parts::after {
+			width: 100%;
+		}
+
+		.land__choose {
+			width: 78%;
+			height: 450px;
+		}
+
+		.land__choose-inner {
+			padding-left: 4%;
+			width: 95%;
+			height: 410px;
+			position: relative;
+			bottom: 9%;
 		}
 	}
