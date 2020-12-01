@@ -5497,7 +5497,7 @@ a {
 		}
 
 		.news__card .photo {
-			width: 263px;
+			width: 100%;
 			background-size: 100%;
 			background-size: cover;
 		}
@@ -5528,7 +5528,7 @@ a {
 		}
 
 		.stories__card .photo {
-			width: 263px;
+			width: 100%;
 			background-size: 100%;
 			background-size: cover;
 		}
@@ -5559,7 +5559,7 @@ a {
 		}
 
 		.useful__card .photo {
-			width: 263px;
+			width: 100%;
 			background-size: 100%;
 			background-size: cover;
 		}
